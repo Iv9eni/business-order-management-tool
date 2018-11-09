@@ -33,12 +33,14 @@
 				include 'selectcustomer.php';
 			?>
 
-			<input type="submit" value="Show Products">
+			<!-- Button for user to accept all values of search and search the products purchased by customer -->
+			<input type="submit" value="Show Purchased Products">
 
 		</form>
 
 		<!-- Start of 2) -->
 		<h3>PRODUCTS</h3>
+		<p>Product Ordering Options:</p>
 
 		<!-- Form to find products and order in a certain manner depicted by user -->
 		<form action="getproducts.php" method="post">
@@ -60,11 +62,53 @@
 
 		</form>
 
+		<hr>
+
 		<!-- Start of 3) -->
+
+		<h4>Buy Products</h4>
+
+		<!-- To purchase a product for a customer -->
 		<form action="insertpurchase.php" method="post">
-			
+			<?php
+				# Runs two querys to get all the customers and products that customers may purchase.
+				$customer_query = 'SELECT * FROM customers';
+				$product_query = 'SELECT * FROM product';
+				$c_result = mysqli_query($connection, $customer_query);
+				$p_result = mysqli_query($connection, $product_query);
 
+				# Checks if either queries have worked
+				if ( !$c_result ) {
+					die("Query 'SELECT * FROM customers' FAILED");
+				}
+				if ( !$p_result ) {
+					die("Query 'SELECT * FROM product' FAILED");
+				}
 
+				# Prints to the user some information about the selections they are making; Case: customer
+				echo '<p>Customer Buying the Product</p>';
+
+				# Starts a selection operation to pick from a list of customers
+				echo '<select name="customer">'
+				# Loops through list of customers and makes them options of our selection
+				while ($row = mysqli_fetch_assoc($c_result)) {
+					echo '<option value="' . $row["customerid"] . '">' . $row["fname"] . ' ' $row["lname"] . '</option>';
+				}
+				echo '</select>'
+
+				# Prints to the user some information about the selections they are making; Case: product
+				echo '<p>Product Being Purchased</p>';
+				# Starts a selection operation to pick from a list of products to buy
+				echo '<select name="product">'
+				# Loops through list of products and makes them options of our selection
+				while ($row = mysqli_fetch_assoc($p_result)) {
+					echo '<option value="' . $row["prodid"] . '">' . $row["description"] . ' ' $row["costperitem"] . '</option>';
+				}
+				echo '</select>'
+
+			?>
+
+			<input type="submit" value="Insert Product Purchase">
 		</form>
 
 	</body>
