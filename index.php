@@ -89,7 +89,7 @@
 				echo '<p>Customer Buying the Product</p>';
 
 				# Starts a selection operation to pick from a list of customers
-				echo '<select name="customer">'
+				echo '<select name="customer">';
 				# Loops through list of customers and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($c_result)) {
 					echo '<option value="' . $row["customerid"] . '">' . $row["fname"] . ' ' $row["lname"] . '</option>';
