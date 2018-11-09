@@ -17,24 +17,48 @@
 		<?php
 			include 'connectdb.php';
 		?>
-		
+
 		<h2> EBAY </h2>
 		<h4> Select Customer to see what products they have purchased... </h4>
-		
+
 		<!-- 1) Allows you to see the products a specific customer has purchased -->
 		<form action="getproductsold.php" method="post">
 
-		<!-- 2) Allows the user to select the way purchased products by a customer are organized -->
+		<!-- Allows the user to select the way purchased products by a customer are organized -->
 		<p>ORDER PRODUCT BY:</p>
 		<input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
-		<input type="radio" name="order" value="DESC">Descending<br><br>		
+		<input type="radio" name="order" value="DESC">Descending<br><br>
 
+		<!-- Shows all the customers user may select from -->
 		<?php
 			include 'selectcustomer.php';
 		?>
-		
+
 		<input type="submit" value="Show Products">
-		
-		</form>		
+
+		</form>
+
+		<!-- Start of 2) -->
+		<h3>PRODUCTS</h3>
+
+		<!-- Form to find products and order in a certain manner depicted by user -->
+		<form action="getproducts.php" method="post">
+
+		<!-- Allows user to select from ascending/descending orders through a selection bar -->
+		<select name="order">
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</select>
+
+		<hr>
+
+		<!-- Radio buttons to select which attribute to order the products by -->
+		<input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
+		<input type="radio" name="orderby" value="description">ORDER BY NAME<br>
+
+		<input type="submit" value = "Show Products">
+
+		</form>
+
 	</body>
 </html>

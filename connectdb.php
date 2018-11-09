@@ -11,7 +11,7 @@
 	$dbuser = "root";
 	$dbpass = "cs3319";
 	$dbname = "idarinskassign2db";
-	
+
 	# Stores the MYSQL database in connection to run querys, store/modify data,  etc..
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 	
