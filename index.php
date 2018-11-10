@@ -92,7 +92,7 @@
 				echo '<select name="customer">';
 				# Loops through list of customers and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($c_result)) {
-					echo '<option value="' . $row["customerid"] . '">' . $row["fname"] . ' ' . $row["lname"] . '</option>';
+					echo '<option value="' . $row["CustomerID"] . '">' . $row["FName"] . ' ' . $row["LName"] . '</option>';
 				}
 				echo '</select>';
 
@@ -103,7 +103,7 @@
 				echo '<select name="product">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<option value="' . $row["prodid"] . '">' . $row["description"] . ' ' . $row["costperitem"] . '</option>';
+					echo '<option value="' . $row["ProdID"] . '">' . $row["Description"] . ' ' . $row["CostPerItem"] . '</option>';
 				}
 				echo '</select>';
 
