@@ -18,7 +18,19 @@
     ?>
 
     <?php
+      # Initializes variables to store the purchasers id and the products id that they are purchasing
       $whichCustomer = $_POST["customer"];
+      $whichProduct = $_POST["product"];
+      $quantity = intval($_POST["quantity"]);
+
+      # Queries to see if the purchaser has purchased this product
+      $query_check = 'SELECT COUNT(*) as countproducts FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
+      $check_result = mysqli_query($connection, $query_check);
+
+      # Checks if the product exists in sql
+      if (countproducts > 0 && $row = mysqli_fetch_assoc($check_result)) {
+        echo 'WORKS!!';
+      }
     ?>
   </body>
 </html>
