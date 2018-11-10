@@ -16,5 +16,9 @@
     <?php
       include 'connectdb.php';
     ?>
+
+    <?php
+      $whichCustomer = $_POST["customer"];
+    ?>
   </body>
 </html>

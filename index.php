@@ -99,17 +99,14 @@
 				# Prints to the user some information about the selections they are making; Case: product
 				echo '<p>Product Being Purchased</p>';
 
-				# Starts a selection operation to pick from a list of products to buy
-				echo '<select name="product">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<option value="' . $row["ProdID"] . '">' . $row["Description"] . ' $' . $row["CostPerItem"] . '</option>';
+					echo '<input type="radio" value="' . $row["ProdID"] . '">' . $row["Description"] . ' $' . $row["CostPerItem"] . '</option>';
 				}
-				echo '</select>';
 			?>
 
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
-			<br><input type="text" name="quantity" value="quantity">
+			Quantity: <input type="text" name="quantity">
 			<br><input type="submit" value="Insert Product Purchase">
 		</form>
 
