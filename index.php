@@ -118,10 +118,12 @@
 					$newID = intval($row["MaxID"]) + 11;
 					echo '<p>New ID Generated if customer created: <b>' . $newID  . '</b></p>';
 				?>
-				First Name: <input type="text" name="FirstName"><br>
-				Last Name: <input type="text" name="LastName"><br>
-				Address: <input type="text" name="Address"><br>
-				Phone Number: <input type="text" name="PNumber" value="FORMAT: xxx-xxxx"><br>
+				<table>
+				<tr><td><label for="firstName">First Name:</label>
+				  <td><input type="text" name="firstName" size="20">
+				<tr><td><label for="lastName">Last Name:</label>
+				  <input type="text" name="lastName" size="20"><br>
+				</table>
 		</form>
 	</body>
 </html>
