@@ -68,7 +68,7 @@
 
 		<h4>Buy Products</h4>
 
-		<!-- To purchase a product for a customer -->
+		<!-- To purchase a product for a customer --
 		<form action="insertpurchase.php" method="post">
 			<?php
 				# Runs two querys to get all the customers and products that customers may purchase.
@@ -103,7 +103,25 @@
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
 			Quantity: <input type="text" name="quantity">
 			<br><input type="submit" value="Insert Product Purchase">
-		</form>
+		</form> -->
 
+		<!-- 4) Inserting a new customer -->
+		<form action="insertcustomer.php" method="post">
+				<hr>
+				<?php
+					$query = 'SELECT MAX(CustomerID) as MaxID from customer';
+					$result = mysqli_query($connection, $query);
+					if (!$result) {
+						die("Something With SQL query went wrong!");
+					}
+					$row = mysqli_fetch_assoc($result);
+					$newID = intval($row["MaxID"]) + 11;
+					echo '<p>New ID Generated if customer created: ' . $newID  . '</p>';
+				?>
+				First Name: <input type="text" name="FirstName">
+				Last Name: <input type="text" name="LastName">
+				Address: <input type="text" name="Address">
+				Phone Number: <input type="text" name="PNumber">
+		</form>
 	</body>
 </html>
