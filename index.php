@@ -108,6 +108,10 @@
 		<!-- 4) Inserting a new customer -->
 		<form action="insertcustomer.php" method="post">
 				<hr>
+
+				<!-- Table to neatly organize the textboxes and labels for them -->
+				<table>
+
 				<?php
 					$query = 'SELECT MAX(CustomerID) as MaxID from customer';
 					$result = mysqli_query($connection, $query);
@@ -116,18 +120,23 @@
 					}
 					$row = mysqli_fetch_assoc($result);
 					$newID = intval($row["MaxID"]) + 11;
-					echo '<p>New ID Generated if customer created: <b>' . $newID  . '</b></p>';
+					echo '<tr><td><b>' . $newID  . '</b>';
 				?>
-				<table>
+
 				<tr><td><label for="firstName">First Name:</label>
 				  <td><input type="text" name="firstName" size="20">
+
 				<tr><td><label for="lastName">Last Name:</label>
 				  <td><input type="text" name="lastName" size="20"><br>
+
 				<tr><td><label for="address">Address:</label>
 					<td><input type="text" name="address" size="20"><br>
+
 				<tr><td><label for="pNumber">Phone Number:</label>
-					<td><input type="text" name="pNumber" size="8"><br>
+					<td><input type="text" name="pNumber" size="20"><br>
+
 				</table>
+
 		</form>
 	</body>
 </html>
