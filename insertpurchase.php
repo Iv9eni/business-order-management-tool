@@ -27,10 +27,12 @@
       $query_check = 'SELECT COUNT(*) as countproducts FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
       $check_result = mysqli_query($connection, $query_check);
 
-      # Checks if the product exists in sql
-      if (countproducts > 0 && $row = mysqli_fetch_assoc($check_result)) {
-        echo 'WORKS!!';
+      if ($row = mysqli_fetch_assoc($check_result)) {
+        if ($row != 0) {
+          echo 'There is product';
+        }
       }
+      #
     ?>
   </body>
 </html>
