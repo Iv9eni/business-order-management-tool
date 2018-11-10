@@ -27,7 +27,7 @@
       $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichProduct . ', ' . $quantity . ')';
       # Checks if the query failed and outputs message if it does, otherwise adds row to database
       if ( !mysqli_query($connection, $query) ) {
-        die('Error: Insertion Failed' . mysqli_error($connection))
+        die('Error: Insertion Failed' . mysqli_error($connection));
       }
 
       echo 'Product purchased!';
