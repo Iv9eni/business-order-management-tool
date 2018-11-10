@@ -103,11 +103,13 @@
 				echo '<select name="product">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<option value="' . $row["ProdID"] . '">' . $row["Description"] . ' ' . $row["CostPerItem"] . '</option>';
+					echo '<option value="' . $row["ProdID"] . '">' . $row["Description"] . ' $' . $row["CostPerItem"] . '</option>';
 				}
 				echo '</select>';
-
 			?>
+
+			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
+			Quantity: <input type="text" name="quantity"><br>
 
 			<input type="submit" value="Insert Product Purchase">
 		</form>
