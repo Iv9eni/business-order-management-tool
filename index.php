@@ -122,7 +122,7 @@
 				<tr><td><label for="firstName">First Name:</label>
 				  <td><input type="text" name="firstName" size="20">
 				<tr><td><label for="lastName">Last Name:</label>
-				  <input type="text" name="lastName" size="20"><br>
+				  <td><input type="text" name="lastName" size="20"><br>
 				</table>
 		</form>
 	</body>
