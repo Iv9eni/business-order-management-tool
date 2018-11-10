@@ -77,16 +77,14 @@
 				$c_result = mysqli_query($connection, $customer_query);
 				$p_result = mysqli_query($connection, $product_query);
 
-				# Checks if either queries have worked
+				# Checks if customer query was successful
 				if ( !$c_result ) {
 					die("Query 'SELECT * FROM customers' FAILED");
 				}
+				#Checks if product query was successful
 				if ( !$p_result ) {
 					die("Query 'SELECT * FROM product' FAILED");
 				}
-
-				# Prints to the user some information about the selections they are making; Case: customer
-				echo '<p>Customer Buying the Product</p>';
 
 				# Starts a selection operation to pick from a list of customers
 				echo '<select name="customer">';
@@ -95,9 +93,6 @@
 					echo '<option value="' . $row["CustomerID"] . '">' . $row["FName"] . ' ' . $row["LName"] . '</option>';
 				}
 				echo '</select>';
-
-				# Prints to the user some information about the selections they are making; Case: product
-				echo '<p>Product Being Purchased</p>';
 
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
