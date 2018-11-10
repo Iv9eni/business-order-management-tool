@@ -23,12 +23,10 @@
       $whichProduct = $_POST["product"];
       $quantity = intval($_POST["quantity"]);
 
-      # Queries to see if the purchaser has purchased this product
-      $query_check = 'SELECT COUNT(*) as countproducts FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
-      $check_result = mysqli_query($connection, $query_check);
+      # Query to insert purchase order into values
+      $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichProduct . ', ' . $quantity . ')';
 
-      $row = mysqli_fetch_assoc($check_result);
-      echo $row["countproducts"];
+
     ?>
   </body>
 </html>
