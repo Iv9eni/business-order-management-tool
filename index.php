@@ -112,15 +112,23 @@
 				<!-- Table to neatly organize the textboxes and labels for them -->
 				<table>
 
+				<!-- Generates new ID for the customer -->
 				<?php
+					# Query to find out the largest customer id
 					$query = 'SELECT MAX(CustomerID) as MaxID from customer';
 					$result = mysqli_query($connection, $query);
+
+					# Checks if query fails
 					if (!$result) {
 						die("Something With SQL query went wrong!");
 					}
+
+					# Passes the row into an array and adds to the new ID
 					$row = mysqli_fetch_assoc($result);
 					$newID = intval($row["MaxID"]) + 11;
-					echo '<tr><td>New CustomerID: <td><b>' . $newID  . '</b>';
+
+					# Prints the ID for the user to know when adding a new customer
+					echo '<tr><td>ID: <td><b>' . $newID  . '</b>';
 				?>
 
 				<tr><td><label for="firstName">First Name:</label>
@@ -135,7 +143,28 @@
 				<tr><td><label for="pNumber">Phone Number:</label>
 					<td><input type="text" name="pNumber" size="20"><br>
 
+				<tr><td><label for="agent">Agent:</label>
+					  <td><select name="agent">
+
+				<!-- PHP to display agents user can select from -->
+				<?php
+					# Query to find all agents from agent table
+					$query = 'SELECT * FROM agent';
+					$result = mysqli_query($connection, $query);
+
+					# Checks if query successful
+					if (!$result) {
+						die("Something went wrong looking for agents!");
+					}
+
+					# Loops through all rows of agent and adds them as option to the selection
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
+					}
+				?>
 				</table>
+
+				<input type="submit" value="Add New Customer">
 
 		</form>
 	</body>
