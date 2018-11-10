@@ -94,17 +94,18 @@
 				while ($row = mysqli_fetch_assoc($c_result)) {
 					echo '<option value="' . $row["customerid"] . '">' . $row["fname"] . ' ' . $row["lname"] . '</option>';
 				}
-				echo '</select>'
+				echo '</select>';
 
 				# Prints to the user some information about the selections they are making; Case: product
 				echo '<p>Product Being Purchased</p>';
+
 				# Starts a selection operation to pick from a list of products to buy
 				echo '<select name="product">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
 					echo '<option value="' . $row["prodid"] . '">' . $row["description"] . ' ' . $row["costperitem"] . '</option>';
 				}
-				echo '</select>'
+				echo '</select>';
 
 			?>
 
