@@ -123,6 +123,10 @@
 				  <td><input type="text" name="firstName" size="20">
 				<tr><td><label for="lastName">Last Name:</label>
 				  <td><input type="text" name="lastName" size="20"><br>
+				<tr><td><label for="address">Address:</label>
+					<td><input type="text" name="address" size="20"><br>
+				<tr><td><label for="pNumber">Phone Number:</label>
+					<td><input type="text" name="pNumber" size="8"><br>
 				</table>
 		</form>
 	</body>
