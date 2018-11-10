@@ -120,7 +120,7 @@
 					}
 					$row = mysqli_fetch_assoc($result);
 					$newID = intval($row["MaxID"]) + 11;
-					echo '<tr><td><b>ID: <td>' . $newID  . '</b>';
+					echo '<tr><td>New CustomerID: <td><b>' . $newID  . '</b>';
 				?>
 
 				<tr><td><label for="firstName">First Name:</label>
