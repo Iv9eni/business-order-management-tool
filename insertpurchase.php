@@ -28,9 +28,7 @@
       $check_result = mysqli_query($connection, $query_check);
 
       $row = mysqli_fetch_assoc($check_result);
-      if ($row["countproducts"] > 0) {
-        echo 'There is this product already';
-      }
+      echo $row["countproducts"];
     ?>
   </body>
 </html>
