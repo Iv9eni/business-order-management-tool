@@ -28,7 +28,7 @@
       $check_result = mysqli_query($connection, $query_check);
 
       if ($row = mysqli_fetch_assoc($check_result)) {
-        if ($row != 0) {
+        if ($row["countproducts"] != 0) {
           echo 'There is product';
         }
       }
