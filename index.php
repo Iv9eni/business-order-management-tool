@@ -72,7 +72,7 @@
 		<form action="insertpurchase.php" method="post">
 			<?php
 				# Runs two querys to get all the customers and products that customers may purchase.
-				$customer_query = 'SELECT * FROM customers';
+				$customer_query = 'SELECT * FROM customer';
 				$product_query = 'SELECT * FROM product';
 				$c_result = mysqli_query($connection, $customer_query);
 				$p_result = mysqli_query($connection, $product_query);
