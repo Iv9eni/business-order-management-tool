@@ -27,7 +27,7 @@
       $customerAgent = $_POST["agent"];
 
       # Query to insert into customer table
-      $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',' $customerFName . ',' . $customerLName . ',' . $customerAddress . ',' . $customerPhone . ')';
+      $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',' . $customerFName . ',' . $customerLName . ',' . $customerAddress . ',' . $customerPhone . ')';
       $insert_result = mysqli_query($connection, $query);
 
       # Checks if the query was successful
