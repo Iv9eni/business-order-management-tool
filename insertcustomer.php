@@ -32,7 +32,7 @@
 
       # Checks if the query was successful
       if ( !$insert_result ) {
-        die("Query to insert customer failed");
+        die("Query to insert customer failed: " . mysqli_error($connection));
       }
 
     ?>
