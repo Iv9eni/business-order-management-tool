@@ -66,7 +66,7 @@
 
 		<!-- Start of 3) -->
 
-		<h4>Buy Products</h4>
+		<h4>Insert Customer Buy Order</h4>
 
 		<!-- To purchase a product for a customer -->
 		<form action="insertpurchase.php" method="post">
@@ -105,7 +105,7 @@
 			<br><input type="submit" value="Insert Product Purchase">
 		</form>
 
-		<!-- 4) Inserting a new customer -->
+		<!-- START OF 4) Inserting a new customer -->
 		<form action="insertcustomer.php" method="post">
 				<hr>
 
@@ -128,22 +128,23 @@
 					$newID = intval($row["MaxID"]) + 11;
 
 					# Prints the ID for the user to know when adding a new customer
-					echo '<tr><td>ID: <td><b>' . $newID  . '</b>';
+					echo '<tr><td><label for="newID"> ID:</label> <td><b>' . $newID  . '</b>';
 				?>
 
-				<tr><td><label for="firstName">First Name:</label>
+				<!-- This is a table and its elements for neat organization for selection -->
+				<tr><td><label for="firstName">First Name:</label> <!-- FIRST NAME -->
 				  <td><input type="text" name="firstName" size="20">
 
-				<tr><td><label for="lastName">Last Name:</label>
+				<tr><td><label for="lastName">Last Name:</label> <!-- LAST NAME -->
 				  <td><input type="text" name="lastName" size="20"><br>
 
-				<tr><td><label for="address">Address:</label>
+				<tr><td><label for="address">Address:</label> <!-- ADDRESS -->
 					<td><input type="text" name="address" size="20"><br>
 
-				<tr><td><label for="pNumber">Phone Number:</label>
+				<tr><td><label for="pNumber">Phone Number:</label> <!-- PHONE NUMBER -->
 					<td><input type="text" name="pNumber" size="20"><br>
 
-				<tr><td><label for="agent">Agent:</label>
+				<tr><td><label for="agent">Agent:</label> <!-- AGENT SELECTION -->
 					  <td><select name="agent">
 
 				<!-- PHP to display agents user can select from -->
@@ -165,7 +166,6 @@
 				</table>
 
 				<input type="submit" value="Add New Customer">
-
 		</form>
 	</body>
 </html>
