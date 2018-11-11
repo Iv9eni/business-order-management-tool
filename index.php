@@ -128,7 +128,7 @@
 					$newID = intval($row["MaxID"]) + 11;
 
 					# Prints the ID for the user to know when adding a new customer
-					echo '<tr><td><label for="newID"> ID:</label> <td><b>' . $newID  . '</b>';
+					echo '<tr><td> ID:</label> <td name="newID"><b>' . $newID  . '</b>';
 				?>
 
 				<!-- This is a table and its elements for neat organization for selection -->
