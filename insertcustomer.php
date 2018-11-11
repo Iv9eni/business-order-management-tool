@@ -19,7 +19,7 @@
     <!-- PHP to insert new customer -->
     <?php
       # Variables initializing all new customer attributes
-      $customerID = $_POST["newID"]
+      $customerID = $_POST["newID"];
       $customerFName = $_POST["firstName"];
       $customerLName = $_POST["lastName"];
       $customerAddress = $_POST["address"];
