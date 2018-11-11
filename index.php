@@ -114,21 +114,10 @@
 
 				<!-- Generates new ID for the customer -->
 				<?php
-					# Query to find out the largest customer id
-					$query = 'SELECT MAX(CustomerID) as MaxID from customer';
-					$result = mysqli_query($connection, $query);
-
-					# Checks if query fails
-					if (!$result) {
-						die("Something With SQL query went wrong!");
-					}
-
-					# Passes the row into an array and adds to the new ID
-					$row = mysqli_fetch_assoc($result);
-					$newID = intval($row["MaxID"]) + 11;
+					include 'findcustomerid.php';
 
 					# Prints the ID for the user to know when adding a new customer
-					echo '<tr><td> ID:</label> <td name="newID"><b>' . $newID  . '</b>';
+					echo '<tr><td> ID:</label> <td><b>' . $newID  . '</b>';
 				?>
 
 				<!-- This is a table and its elements for neat organization for selection -->

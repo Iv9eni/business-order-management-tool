@@ -18,8 +18,11 @@
 
     <!-- PHP to insert new customer -->
     <?php
+      # Finds a customerID and initializes it
+      include 'findcustomerid.php';
+      $customerID = $newID;
+
       # Variables initializing all new customer attributes
-      $customerID = $_POST["newID"];
       $customerFName = $_POST["firstName"];
       $customerLName = $_POST["lastName"];
       $customerAddress = $_POST["address"];
