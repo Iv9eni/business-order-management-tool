@@ -6,6 +6,9 @@
 -->
 
 <?php
+  # Connects to database
+  include 'connectdb.php';
+
   # Runs query to check which customers are available to have their phone number updated
   $customer_query = 'SELECT * FROM customer';
   $c_result = mysqli_query($connection, $customer_query);

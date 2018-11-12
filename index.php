@@ -148,11 +148,16 @@
 
 		<!-- Start of 5) Updating a customers phone number -->
 		<hr>
+		<b> Update Phone Number </b>
 
 		<!-- Changes a current customers phone number -->
 		<form action="updatephonenumber.php" method="post">
-
-
+			<!-- To show the customers -->
+			<?php
+				include 'showcustomers.php';
+			?>
+			<input type="text" name="newNumber">
+			<input type="submit" value="Update Phone Number">
 
 		</form>
 	</body>
