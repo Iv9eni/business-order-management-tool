@@ -18,7 +18,7 @@
 
     <!-- PHP to insert new customer -->
     <?php
-      # Finds a customerID and initializes it
+      # Finds a new customerID and initializes it
       include 'findcustomerid.php';
       $customerID = $newID;
 

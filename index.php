@@ -72,27 +72,16 @@
 		<form action="insertpurchase.php" method="post">
 			<?php
 				# Runs two querys to get all the customers and products that customers may purchase.
-				$customer_query = 'SELECT * FROM customer';
 				$product_query = 'SELECT * FROM product';
-				$c_result = mysqli_query($connection, $customer_query);
 				$p_result = mysqli_query($connection, $product_query);
 
-				# Checks if customer query was successful
-				if ( !$c_result ) {
-					die("Query 'SELECT * FROM customers' FAILED");
-				}
 				#Checks if product query was successful
 				if ( !$p_result ) {
 					die("Query 'SELECT * FROM product' FAILED");
 				}
 
-				# Starts a selection operation to pick from a list of customers
-				echo '<select name="customer">';
-				# Loops through list of customers and makes them options of our selection
-				while ($row = mysqli_fetch_assoc($c_result)) {
-					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
-				}
-				echo '</select><br>';
+				# Shows customers 
+				include 'selectcustomer.php';
 
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
@@ -117,7 +106,7 @@
 					include 'findcustomerid.php';
 
 					# Prints the ID for the user to know when adding a new customer
-					echo '<tr><td> ID:</label> <td><b>' . $newID  . '</b>';
+					echo '<tr><td> ID: <td><b>' . $newID  . '</b>';
 				?>
 
 				<!-- This is a table and its elements for neat organization for selection -->
@@ -153,8 +142,18 @@
 					}
 				?>
 				</table>
-
+				<!-- Button to submit details and create new customer -->
 				<input type="submit" value="Add New Customer">
+		</form>
+
+		<!-- Start of 5) Updating a customers phone number -->
+		<hr>
+
+		<!-- Changes a current customers phone number -->
+		<form action="updatephonenumber.php" method="post">
+
+
+
 		</form>
 	</body>
 </html>
