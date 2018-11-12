@@ -80,8 +80,8 @@
 					die("Query 'SELECT * FROM product' FAILED");
 				}
 
-				# Shows customers 
-				include 'selectcustomer.php';
+				# Shows customers
+				include 'showcustomers.php';
 
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
