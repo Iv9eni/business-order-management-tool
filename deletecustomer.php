@@ -33,6 +33,6 @@
       }
 
     ?>
-    <input type="button" value="Return to previous page" onClick="javascript:history.go(-1)" />
+    <input type="button" value="Return to previous page" onClick="window.location.href = "http://stackoverflow.com";" />
   </body>
 </html>
