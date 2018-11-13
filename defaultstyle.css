@@ -19,6 +19,6 @@
     text-decoration: none;
 }
 
-a.hover {
+#navigationBar li a.hover {
     color: blue;
 }
