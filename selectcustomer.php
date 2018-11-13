@@ -17,9 +17,11 @@
 
 	#Loops through each row given in the query asked for above
 	while ($row = mysqli_fetch_assoc($result)) {
+		echo '<div>';
 		echo '<input type="radio" name="customers" value="' . $row["CustomerID"] . '" />' . $row["CustomerID"] . ':<br> Name: ' . $row["LName"] . ', ' . $row["FName"] . '<br>';
 		echo 'Agent: ' . $row["FirstName"] . ' ' . $row["LastName"] . '<br>';
 		echo 'Address: ' . $row["Address"] . '<br>';
 		echo 'Phone Number: (***) ' . $row["PhoneNumber"] . '<br><br>';
+		echo '</div>';
 	}
 ?>

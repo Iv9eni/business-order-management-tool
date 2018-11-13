@@ -7,5 +7,7 @@
 
 #customers {
   padding: 5px;
+}
+#customers div {
   float: left;
 }
