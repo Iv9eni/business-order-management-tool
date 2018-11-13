@@ -36,7 +36,7 @@
     ?>
 
     <div id="showproduct">
-      <span>Order Preferences:</span>
+      <span>Order Preferences:</span> <br>
       <!-- Form to find products and order in a certain manner depicted by user -->
       <form action="getproducts.php" method="post">
         <!-- Allows user to select from ascending/descending orders through a selection bar -->
