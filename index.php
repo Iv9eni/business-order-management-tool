@@ -172,7 +172,7 @@
 
 				# Loops through list of customers and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($c_result)) {
-					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["pNumber"]  . '</option>';
+					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["PhoneNumber"]  . '</option>';
 				}
 
 				echo '</select><br>';
