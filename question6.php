@@ -36,9 +36,9 @@
       include 'connectdb.php';
     ?>
 
-    <!-- Start of 5) Updating a customers phone number -->
-    <!-- Changes a current customers phone number -->
-    <form action="updatephonenumber.php" method="post">
+    <!-- Start of 6) Deleting a customer -->
+    <!-- Deletes a customer -->
+    <form action="deletecustomer.php" method="post">
       <!-- To show the customers -->
       <?php
         # Gets customer data to print selection
@@ -49,15 +49,14 @@
 
         # Loops through list of customers and makes them options of our selection
         while ($row = mysqli_fetch_assoc($c_result)) {
-          echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["PhoneNumber"]  . '</option>';
+          echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] .  '</option>';
         }
 
         echo '</select><br>';
       ?>
 
       <!-- Submits the change in phone number -->
-      <input type="text" name="newNumber">
-      <input type="submit" value="Update Phone Number">
+      <input type="submit" value="Delete Customer">
 
     </form>
 
