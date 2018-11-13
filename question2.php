@@ -2,7 +2,7 @@
   Author: Ivgeni Darinski
   Student NO.: 250920885
   Date Created: 2018-11-13
-  File: productinformation.php
+  File: question2.php
 -->
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
-    <title>Product Information</title>
+    <title>EBAY - Products</title>
   </head>
   <body>
 
@@ -19,11 +19,12 @@
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
 			<ul>
-				<li><a href="index.php">1</a></li>
+        <li><a href="index.php">Home</a></li>
+				<li><a href="question1.php">1</a></li>
 				<li><a href="question2.php">2</a></li>
-				<li><a href="">3</a></li>
-				<li><a href="">4</a></li>
-				<li><a href="">5</a></li>
+				<li><a href="question3.php">3</a></li>
+				<li><a href="question4.php">4</a></li>
+				<li><a href="question5.php">5</a></li>
 			</ul>
 		</div>
 
