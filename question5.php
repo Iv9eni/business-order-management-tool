@@ -54,8 +54,8 @@
         ?>
 
         <!-- Submits the change in phone number -->
-        <input type="text" name="newNumber">
-        <input type="submit" value="Update Phone Number">
+        <input type="text" name="newNumber"><br>
+        Enter New Phone Number: <input type="submit" value="Update Phone Number">
 
       </form>
     </div>
