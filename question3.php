@@ -29,8 +29,6 @@
 			</ul>
 		</div>
 
-		<br><br>
-
     <!-- Connects to HTML file with the database we are working with -->
     <?php
       include 'connectdb.php';

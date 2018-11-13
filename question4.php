@@ -36,7 +36,6 @@
 
     <!-- START OF 4) Inserting a new customer -->
     <form action="insertcustomer.php" method="post">
-        <hr>
 
         <!-- Table to neatly organize the textboxes and labels for them -->
         <table>
