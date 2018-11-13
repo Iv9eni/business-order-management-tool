@@ -1,7 +1,17 @@
 #items {
   padding: 10px;
+
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  width: auto;
+}
+
+#submission {
+  padding: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
   width: auto;
 }
