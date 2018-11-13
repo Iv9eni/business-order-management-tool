@@ -26,13 +26,18 @@
 
       # Checks if the query was successful
       if (mysqli_query($connection, $delete_query)) {
-        echo '<h2>Successfully deleted customer!</h2>';
+        echo '<a href="question6.php"><h2>Successfully deleted customer!</h2></a>';
       }
       else {
         die("Query to delete customer failed: " . mysqli_error($connection));
       }
 
     ?>
-    <input type="button" value="Return to previous page" onClick="window.location.href = "http://stackoverflow.com";" />
+
+    <!-- Closes connection -->
+    <?php
+      mysqli_close($connection);
+    ?>
+    
   </body>
 </html>

@@ -2,7 +2,7 @@
   Author: Ivgeni Darinski
   Student NO.: 250920885
   Date Created: 2018-11-11
-  File: showcustomers.php
+  File: getcustomerdata.php
 -->
 
 <?php
@@ -18,4 +18,9 @@
     die("Query 'SELECT * FROM customers' FAILED");
   }
 
+ ?>
+
+ <!-- Closes connection -->
+ <?php
+   mysqli_close($connection);
  ?>
