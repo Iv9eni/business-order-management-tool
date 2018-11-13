@@ -18,6 +18,7 @@
   float: left;
   height: 75px;
   width: 250px;
+
 }
 
 #submit {
@@ -26,6 +27,8 @@
   width: 180px;
   height: 60px;
 
-  margin-top: auto;
-  margin-left:
+  position: absolute;
+  top: 500px;
+  right: 620px;
+
 }

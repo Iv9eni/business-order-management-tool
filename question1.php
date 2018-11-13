@@ -34,7 +34,7 @@
     <?php
       include 'connectdb.php';
     ?>
-a
+
     <br>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
@@ -52,9 +52,6 @@ a
           include 'selectcustomer.php';
         ?>
       </div>
-
-      <!-- Button for user to accept all values of search and search the products purchased by customer -->
-      <input type="submit" value="Show Purchased Products" id="submit">
 
     </form>
   </body>
