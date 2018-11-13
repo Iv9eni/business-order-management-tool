@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
+		<link rel="stylesheet" type="text/css" href="question2.css" />
     <title>EBAY - Products</title>
   </head>
   <body>
@@ -51,7 +52,16 @@
       <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
 
       <input type="submit" value = "Show Products">
-
     </form>
+
+
+    <div id="neverPurchased">
+      <!-- Writes descriptions of products that were never purchased -->
+      <?php
+
+
+       ?>
+   </div>
+
   </body>
 </html>
