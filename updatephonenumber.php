@@ -8,6 +8,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <title> EBAY - Phone Number Updater</title>
   </head>
   <body>
@@ -15,6 +16,22 @@
     <?php
       include 'connectdb.php';
     ?>
+
+    <!-- EBAY logo -->
+    <img id="logo" src="logo.png">
+
+    <!-- Allows navigation through website -->
+    <div id="navigationBar">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="question1.php">View Customer Purchases</a></li>
+        <li><a href="question2and8.php">Products</a></li>
+        <li><a href="question3.php">Create Buy Order</a></li>
+        <li><a href="question4.php">Add Customer</a></li>
+        <li><a href="question5.php">Update Phone</a></li>
+        <li><a href="question6.php">Delete Customer</a></li>
+      </ul>
+    </div>
 
     <!-- Updates the customers phone number -->
     <?php
