@@ -11,10 +11,6 @@
 }
 
 #customers {
-  width: auto;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #customers div {
@@ -27,4 +23,5 @@
 #submit {
   padding: 10px;
   position: absolute;
+  float: left;
 }
