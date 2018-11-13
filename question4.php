@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styling/question4.css" />
     <title>EBAY - Insert New Customer</title>
   </head>
   <body>
@@ -38,7 +39,7 @@
     <form action="insertcustomer.php" method="post">
 
         <!-- Table to neatly organize the textboxes and labels for them -->
-        <table>
+        <table id="items">
 
         <!-- Generates new ID for the customer -->
         <?php
