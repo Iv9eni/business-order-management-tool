@@ -9,8 +9,11 @@
 }
 
 #submission {
-  width: 250px;
+  width: 220px;
   height: 35px;
   text-align: center;
   margin-left: auto;
+
+  position: absolute;
+  left: 150px;
 }
