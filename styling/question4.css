@@ -1,4 +1,7 @@
 #items {
   padding: 10px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
 }
