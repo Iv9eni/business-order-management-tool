@@ -81,9 +81,9 @@
             echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
           }
         ?>
-        </table>
         <!-- Button to submit details and create new customer -->
-        <input type="submit" value="Add New Customer" id="submission">
+        <input type="submit" value="Add New Customer" id="submission>
+        </table>
     </form>
 
   </body>
