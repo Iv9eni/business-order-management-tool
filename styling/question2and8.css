@@ -26,6 +26,7 @@
 }
 
 #neverPurchased span {
+  color: grey;
   margin-top: 2px;
 }
 
