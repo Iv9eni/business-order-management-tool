@@ -16,14 +16,14 @@
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
 			<ul>
-				<li><a href="index.php">SHOW CUSTOMER SALES</li>
-				<li><a href="productinformation.php">PRODUCT INFORMATION</li>
-				<li><a href="">SHOW CUSTOMER SALES</li>
-				<li><a href="">SHOW CUSTOMER SALES</li>
-				<li><a href="">SHOW CUSTOMER SALES</li>
+				<li><a href="index.php">SHOW CUSTOMER SALES</a></li>
+				<li><a href="productinformation.php">PRODUCT INFORMATION</a></li>
+				<li><a href="">SHOW CUSTOMER SALES</a></li>
+				<li><a href="">SHOW CUSTOMER SALES</a></li>
+				<li><a href="">SHOW CUSTOMER SALES</a></li>
 			</ul>
 		</div>
-		
+
 		<!-- Connects to HTML file with the database we are working with -->
 		<?php
 			include 'connectdb.php';
