@@ -4,7 +4,7 @@ body {
 
 #navigationBar ul {
     list-style-type: none;
-    margin: auto;
+    margin: 10px auto auto auto;
     padding: 10px;
     width: 100%;
     background-color: #fff6f2;
