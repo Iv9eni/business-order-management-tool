@@ -13,7 +13,7 @@
     <title>EBAY - Create Buy Order</title>
   </head>
   <body>
-
+    <!-- EBAY logo -->
     <img src="logo.png" width="100" height="60">
 
 		<!-- Allows navigation through website -->
@@ -25,6 +25,7 @@
 				<li><a href="question3.php">3</a></li>
 				<li><a href="question4.php">4</a></li>
 				<li><a href="question5.php">5</a></li>
+        <li><a href="question6.php">6</a></li>
 			</ul>
 		</div>
 
@@ -36,9 +37,6 @@
     ?>
 
     <!-- Start of 3) -->
-
-		<h4>Insert Customer Buy Order</h4>
-
 		<!-- To purchase a product for a customer -->
 		<form action="insertpurchase.php" method="post">
 			<?php

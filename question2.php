@@ -13,7 +13,7 @@
     <title>EBAY - Products</title>
   </head>
   <body>
-
+    <!-- EBAY logo -->
     <img src="logo.png" width="100" height="60">
 
 		<!-- Allows navigation through website -->
@@ -25,6 +25,7 @@
 				<li><a href="question3.php">3</a></li>
 				<li><a href="question4.php">4</a></li>
 				<li><a href="question5.php">5</a></li>
+        <li><a href="question6.php">6</a></li>
 			</ul>
 		</div>
 
@@ -34,10 +35,6 @@
     <?php
       include 'connectdb.php';
     ?>
-
-    <!-- Start of 2) -->
-    <h3>OUR PRODUCTS</h3>
-    <p>Product Ordering Options:</p>
 
     <!-- Form to find products and order in a certain manner depicted by user -->
     <form action="getproducts.php" method="post">
