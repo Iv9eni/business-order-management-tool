@@ -17,10 +17,7 @@
 }
 
 #neverPurchased span {
-  text-align: center;
-  font-family: "Arial";
-  border-bottom: 1px solid grey;
-  font-size: 16px;
+  text-decoration: underline;
 }
 
 #neverPurchased ul {
