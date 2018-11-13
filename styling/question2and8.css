@@ -20,7 +20,9 @@
   width: 175px;
   height: 175px;
   margin: 0px 0px 0px 300px;
+
   position: absolute;
+  bottom: 250px;
 }
 
 #neverPurchased span {
@@ -29,7 +31,6 @@
 
 #neverPurchased ul {
   list-style-type: none;
-  margin: auto;
 }
 
 #neverPurchased ul li {
