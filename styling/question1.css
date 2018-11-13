@@ -11,21 +11,16 @@
   text-align: center;
 }
 
-#customers {
-  width: auto;
-  height: auto;
-  background-color: green;
-}
-
 #customers div {
   padding: 10px;
+  margin: 1px;
   float: left;
   background-color: #e1eaea;
-  margin: 1px;
 }
 
 #submit {
   padding: 10px;
   position: absolute;
-  float: left;
+  left: auto;
+  bottom: auto;
 }

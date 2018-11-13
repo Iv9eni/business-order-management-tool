@@ -45,6 +45,7 @@
         <input type="radio" name="order" value="DESC">Descending<br><br>
       </div>
 
+      <!-- Neatly stack elements -->
       <div id="customers">
         <!-- Shows all the customers user may select from -->
         <?php
