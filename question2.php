@@ -65,6 +65,8 @@
         while ($row = mysqli_fetch_assoc($result)) {
           echo '<li>' . $row["Description"] . '</li>';
         }
+        # Ends the unordered list
+        echo '</ul>';
        ?>
    </div>
 

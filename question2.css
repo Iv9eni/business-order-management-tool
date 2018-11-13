@@ -4,3 +4,13 @@
   height: 175px;
   margin: 0px 0px 50px 250px;
 }
+
+#neverPurchased ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+#neverPurchased ul li {
+  text-align: center;
+  margin: auto;
+}
