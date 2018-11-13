@@ -3,10 +3,6 @@ body {
   color: #006666;
 }
 
-a.active {
-  text-decoration: underline;
-}
-
 #navigationBar ul {
     list-style-type: none;
     margin: auto;
@@ -27,5 +23,9 @@ a.active {
 }
 
 #navigationBar li a:hover {
+  text-decoration: underline;
+}
+
+#navigationBar .active {
   text-decoration: underline;
 }
