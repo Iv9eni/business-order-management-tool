@@ -23,9 +23,9 @@ body {
 }
 
 #navigationBar li a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid grey;
 }
 
 #navigationBar .active {
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }

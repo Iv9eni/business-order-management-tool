@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
-    <title>EBAY - Update Customer Phone</title>
+    <title>EBAY - Delete Customer</title>
   </head>
   <body>
     <!-- EBAY logo -->
