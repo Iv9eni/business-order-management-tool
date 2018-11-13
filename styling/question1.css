@@ -1,12 +1,15 @@
 #organizebuttons {
   padding: 10px;
-  background-color: #80ff80;
-  width: 200px;
+  width: 140px;
   height: 50px;
 }
 
 #customers {
+  width: auto;
+  height: auto;
+  margin: auto;
 }
+
 #customers div {
   padding: 10px;
   float: left;
