@@ -18,8 +18,8 @@
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
 			<ul>
-				<li><a href="index.php">SHOW CUSTOMER SALES</a></li>
-				<li><a href="productinformation.php">PRODUCT INFORMATION</a></li>
+				<li><a href="index.php">1</a></li>
+				<li><a href="productinformation.php">2</a></li>
 				<li><a href="">SHOW CUSTOMER SALES</a></li>
 				<li><a href="">SHOW CUSTOMER SALES</a></li>
 				<li><a href="">SHOW CUSTOMER SALES</a></li>
