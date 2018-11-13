@@ -21,12 +21,10 @@
   padding: 10px;
   float: left;
   background-color: #e1eaea;
-  margin: auto;
-
-  width: auto;
-  height: auto;
+  margin: 1px;
 }
 
 #submit {
-
+  padding: 10px;
+  position: absolute;
 }
