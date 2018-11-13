@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <title>EBAY - Customer Purchases</title>
   </head>
   <body>
@@ -34,13 +35,14 @@
       include 'connectdb.php';
     ?>
 
+
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
-
-      <!-- Allows the user to select the way purchased products by a customer are organized -->
-      <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
-      <input type="radio" name="order" value="DESC">Descending<br><br>
-
+      <div id="organizebuttons">
+        <!-- Allows the user to select the way purchased products by a customer are organized -->
+        <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
+        <input type="radio" name="order" value="DESC">Descending<br><br>
+      </div>
       <!-- Shows all the customers user may select from -->
       <?php
         include 'selectcustomer.php';

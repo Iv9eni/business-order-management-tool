@@ -20,12 +20,11 @@
   width: 175px;
   height: 175px;
   margin: 0px 0px 0px 300px;
-  float: left;
+  display: block;
 }
 
 #neverPurchased span {
   text-decoration: underline;
-  font-family: "Arial";
 }
 
 #neverPurchased ul {
@@ -36,6 +35,5 @@
 #neverPurchased ul li {
   text-align: center;
   margin: auto;
-  font-family: "Arial";
   font-size: 14px;
 }
