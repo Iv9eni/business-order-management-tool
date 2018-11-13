@@ -6,6 +6,10 @@
   margin-right: auto;
 }
 
+#organizebuttons span{
+  text-align: center;
+}
+
 #customers {
   width: auto;
   height: auto;
@@ -17,6 +21,12 @@
   padding: 10px;
   float: left;
   background-color: #e1eaea;
-  margin: 10px;
+  margin: auto;
+
+  width: auto;
+  height: auto;
+}
+
+#submit {
 
 }

@@ -35,10 +35,11 @@
       include 'connectdb.php';
     ?>
 
-
+    <br>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
       <div id="organizebuttons">
+        <span>Order Products by: </span>
         <!-- Allows the user to select the way purchased products by a customer are organized -->
         <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
         <input type="radio" name="order" value="DESC">Descending<br><br>
@@ -49,11 +50,10 @@
         <?php
           include 'selectcustomer.php';
         ?>
+      </div>
 
       <!-- Button for user to accept all values of search and search the products purchased by customer -->
-      <input type="submit" value="Show Purchased Products">
-
-      </div>
+      <input type="submit" value="Show Purchased Products" id="submit">
 
     </form>
   </body>
