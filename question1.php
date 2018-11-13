@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-    <link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styling/question1.css" />
     <title>EBAY - Customer Purchases</title>
   </head>
   <body>
@@ -43,10 +43,13 @@
         <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
         <input type="radio" name="order" value="DESC">Descending<br><br>
       </div>
-      <!-- Shows all the customers user may select from -->
-      <?php
-        include 'selectcustomer.php';
-      ?>
+
+      <div id="customers">
+        <!-- Shows all the customers user may select from -->
+        <?php
+          include 'selectcustomer.php';
+        ?>
+      </div>
 
       <!-- Button for user to accept all values of search and search the products purchased by customer -->
       <input type="submit" value="Show Purchased Products">

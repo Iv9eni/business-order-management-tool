@@ -20,7 +20,7 @@
   width: 175px;
   height: 175px;
   margin: 0px 0px 0px 300px;
-  display: block;
+  position: absolute;
 }
 
 #neverPurchased span {
