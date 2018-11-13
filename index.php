@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
 	</head>
 	<body>
-		<img id="logo" src="webpictures\logo.png" width="100" height="60">
+		<img src="logo.png" width="100" height="60">
 
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
