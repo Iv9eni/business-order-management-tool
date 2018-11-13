@@ -111,16 +111,16 @@
 
 				<!-- This is a table and its elements for neat organization for selection -->
 				<tr><td><label for="firstName">First Name:</label> <!-- FIRST NAME -->
-				  <td><input type="text" name="firstName" size="20">
+				  <td><input type="text" name="firstName">
 
 				<tr><td><label for="lastName">Last Name:</label> <!-- LAST NAME -->
-				  <td><input type="text" name="lastName" size="20"><br>
+				  <td><input type="text" name="lastName"><br>
 
 				<tr><td><label for="address">Address:</label> <!-- ADDRESS -->
-					<td><input type="text" name="address" size="20"><br>
+					<td><input type="text" name="address"><br>
 
 				<tr><td><label for="pNumber">Phone Number:</label> <!-- PHONE NUMBER -->
-					<td><input type="text" name="pNumber" size="20"><br>
+					<td><input type="text" name="pNumber"><br>
 
 				<tr><td><label for="agent">Agent:</label> <!-- AGENT SELECTION -->
 					  <td><select name="agent">
@@ -154,8 +154,19 @@
 		<form action="updatephonenumber.php" method="post">
 			<!-- To show the customers -->
 			<?php
-				include 'showcustomers.php';
+				include 'getcustomerdata.php';
+				# Starts a selection operation to pick from a list of customers
+				echo '<select name="customer">';
+
+				# Loops through list of customers and makes them options of our selection
+				while ($row = mysqli_fetch_assoc($c_result)) {
+					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
+				}
+
+				echo '</select><br>';
 			?>
+
+			<!-- Submits the change in phone number -->
 			<input type="text" name="newNumber">
 			<input type="submit" value="Update Phone Number">
 

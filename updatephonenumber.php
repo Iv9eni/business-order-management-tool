@@ -15,6 +15,11 @@
     <?php
       include 'connectdb.php';
     ?>
-    
+    <!-- Updates the customers phone number -->
+    <?php
+
+
+
+    ?>
   </body>
 </html>
