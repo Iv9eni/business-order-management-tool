@@ -23,3 +23,8 @@ body {
 #navigationBar li a:hover {
   text-decoration: underline;
 }
+
+#navigationBar li a.active {
+  text-decoration: underline;
+  color: red;
+}
