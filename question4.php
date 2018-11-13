@@ -39,7 +39,7 @@
     <form action="insertcustomer.php" method="post">
 
         <!-- Table to neatly organize the textboxes and labels for them -->
-        <table id="items">
+        <table class="submission">
 
         <!-- Generates new ID for the customer -->
         <?php
@@ -81,9 +81,10 @@
             echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
           }
         ?>
-        <!-- Button to submit details and create new customer -->
-        <input type="submit" value="Add New Customer" id="submission>
         </table>
+
+        <!-- Button to submit details and create new customer -->
+        <input type="submit" value="Add New Customer" class="submission">
     </form>
 
   </body>
