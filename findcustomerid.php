@@ -23,8 +23,3 @@
     $row = mysqli_fetch_assoc($result);
     $newID = intval($row["MaxID"]) + 11;
   ?>
-
-  <!-- Closes connection -->
-  <?php
-    mysqli_close($connection);
-  ?>

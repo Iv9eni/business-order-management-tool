@@ -19,8 +19,3 @@
   }
 
  ?>
-
- <!-- Closes connection -->
- <?php
-   mysqli_close($connection);
- ?>
