@@ -21,6 +21,7 @@
   padding: 10px;
   margin: 1px;
   float: left;
+<<<<<<< HEAD
   
   position: relative;
   left: auto;
@@ -29,6 +30,11 @@
 
   height: auto;
   width: auto;
+=======
+  height: 75px;
+  width: 250px;
+
+>>>>>>> 3a0064399f56c192b6339ee8e3f3cefe9f5412a5
 }
 
 #submit {
@@ -40,4 +46,8 @@
   position: absolute;
   top: 500px;
   right: 620px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a0064399f56c192b6339ee8e3f3cefe9f5412a5
 }
