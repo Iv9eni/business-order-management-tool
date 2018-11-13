@@ -6,8 +6,8 @@
 }
 
 #customers {
-  padding: 5px;
 }
 #customers div {
+  padding: 10px;
   float: left;
 }
