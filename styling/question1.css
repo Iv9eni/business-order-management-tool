@@ -19,10 +19,11 @@
 }
 
 #submit {
+  text-align: center;
   padding: 10px;
   width: 180px;
-  height: 20px;
-  position: absolute;
-  left: auto;
-  bottom: auto;
+  height: 60px;
+
+  margin-top: 100%;
+  margin-left: auto;
 }
