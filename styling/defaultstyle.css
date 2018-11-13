@@ -8,8 +8,10 @@ body {
 }
 
 #logo {
-  padding-top: 10px;
-  padding-left: 40px;
+  width: 420px;
+  height: 90px;
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
 #logo:hover {
