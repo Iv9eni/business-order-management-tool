@@ -1,4 +1,4 @@
-body {
+#body28 {
   font-family: "Arial";
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 #subutton{
-
+  padding: 8px;
 }
 
 #neverPurchased {

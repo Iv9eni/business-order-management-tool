@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="styling/question2and8.css" />
     <title>EBAY - Products</title>
   </head>
-  <body>
+  <body id="body28">
     <!-- EBAY logo -->
     <img id="logo" src="logo.png">
 
