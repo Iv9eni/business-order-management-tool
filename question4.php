@@ -83,7 +83,7 @@
         ?>
         </table>
         <!-- Button to submit details and create new customer -->
-        <input type="submit" value="Add New Customer">
+        <input type="submit" value="Add New Customer" id="submission">
     </form>
 
   </body>
