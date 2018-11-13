@@ -14,7 +14,7 @@
 	</head>
 	<body>
     <!-- EBAY logo -->
-    <img src="logo.png" width="420" height="90">
+    <img id="logo" src="logo.png" width="420" height="90">
 
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">

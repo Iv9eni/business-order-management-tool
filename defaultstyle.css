@@ -7,6 +7,10 @@ body {
   font-family: "Times Header";
 }
 
+#logo {
+  margin-top: 10px;
+}
+
 #navigationBar ul {
     list-style-type: none;
     margin: 10px auto auto auto;
