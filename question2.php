@@ -53,7 +53,7 @@
 
 
     <div id="neverPurchased">
-      <h2 style="text-align: center;">
+      <h2 style="text-align: center;"></h2>
       <!-- Writes descriptions of products that were never purchased -->
       <?php
         # Query to find all products not in the list of purchased products
