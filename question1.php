@@ -9,7 +9,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
+		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <title>EBAY - Customer Purchases</title>
   </head>
   <body>

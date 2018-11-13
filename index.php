@@ -10,7 +10,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>EBAY Admin Tools Index</title>
-		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
+		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
 	</head>
 	<body>
     <!-- EBAY logo -->

@@ -9,8 +9,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
-		<link rel="stylesheet" type="text/css" href="question2.css" />
+		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+		<link rel="stylesheet" type="text/css" href="styling/question2.css" />
     <title>EBAY - Products</title>
   </head>
   <body>

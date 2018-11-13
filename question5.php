@@ -9,7 +9,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
+		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <title>EBAY - Update Customer Phone</title>
   </head>
   <body>
@@ -33,31 +33,31 @@
     <?php
       include 'connectdb.php';
     ?>
+    <div id="updatetools">
+      <!-- Start of 5) Updating a customers phone number -->
+      <!-- Changes a current customers phone number -->
+      <form action="updatephonenumber.php" method="post">
+        <!-- To show the customers -->
+        <?php
+          # Gets customer data to print selection
+          include 'getcustomerdata.php';
 
-    <!-- Start of 5) Updating a customers phone number -->
-    <!-- Changes a current customers phone number -->
-    <form action="updatephonenumber.php" method="post">
-      <!-- To show the customers -->
-      <?php
-        # Gets customer data to print selection
-        include 'getcustomerdata.php';
+          # Starts a selection operation to pick from a list of customers
+          echo '<select name="customer">';
 
-        # Starts a selection operation to pick from a list of customers
-        echo '<select name="customer">';
+          # Loops through list of customers and makes them options of our selection
+          while ($row = mysqli_fetch_assoc($c_result)) {
+            echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["PhoneNumber"]  . '</option>';
+          }
 
-        # Loops through list of customers and makes them options of our selection
-        while ($row = mysqli_fetch_assoc($c_result)) {
-          echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["PhoneNumber"]  . '</option>';
-        }
+          echo '</select><br>';
+        ?>
 
-        echo '</select><br>';
-      ?>
+        <!-- Submits the change in phone number -->
+        <input type="text" name="newNumber">
+        <input type="submit" value="Update Phone Number">
 
-      <!-- Submits the change in phone number -->
-      <input type="text" name="newNumber">
-      <input type="submit" value="Update Phone Number">
-
-    </form>
-
+      </form>
+    </div>
   </body>
 </html>
