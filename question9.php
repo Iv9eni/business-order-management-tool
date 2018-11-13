@@ -25,8 +25,8 @@
 				<li><a href="question3.php">Create Buy Order</a></li>
 				<li><a href="question4.php">Add Customer</a></li>
 				<li><a href="question5.php">Update Phone</a></li>
-        <li><a class="active" href="question6.php">Delete Customer</a></li>
-        <li><a href="question9.php">Order Summary</a></li>
+        <li><a href="question6.php">Delete Customer</a></li>
+        <li><a class="active" href="question9.php">Order Summary</a></li>
 			</ul>
 		</div>
 
