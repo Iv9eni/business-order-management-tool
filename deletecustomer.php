@@ -25,13 +25,14 @@
       $delete_query = 'DELETE FROM customer WHERE customerid=' . $customerID;
 
       # Checks if the query was successful
-      if (mysqli_query($connection, $query)) {
-        echo 'Successfully deleted customer!';
-      } else {
+      if (mysqli_query($connection, $delete_query)) {
+        echo '<h2>Successfully deleted customer!</h2>';
+      }
+      else {
         die("Query to delete customer failed: " . mysqli_error($connection));
       }
 
     ?>
-
+    <input type="button" value="Return to previous page" onClick="javascript:history.go(-1)" />
   </body>
 </html>
