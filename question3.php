@@ -67,7 +67,7 @@
 			?>
 
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
-			Quantity: <input type="text" name="quantity">
+			Quantity: <input type="text" name="quantity" placeholder="1">
 			<br><input type="submit" value="Insert Product Purchase">
 		</form>
 

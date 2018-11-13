@@ -50,16 +50,16 @@
 
         <!-- This is a table and its elements for neat organization for selection -->
         <tr><td><label for="firstName">First Name:</label> <!-- FIRST NAME -->
-          <td><input type="text" name="firstName">
+          <td><input type="text" name="firstName" placeholder="John">
 
         <tr><td><label for="lastName">Last Name:</label> <!-- LAST NAME -->
-          <td><input type="text" name="lastName"><br>
+          <td><input type="text" name="lastName" placeholder="Doe"><br>
 
         <tr><td><label for="address">Address:</label> <!-- ADDRESS -->
-          <td><input type="text" name="address"><br>
+          <td><input type="text" name="address" placeholder="North Korea"><br>
 
         <tr><td><label for="pNumber">Phone Number:</label> <!-- PHONE NUMBER -->
-          <td><input type="text" name="pNumber"><br>
+          <td><input type="text" name="pNumber" placeholder="***-****"><br>
 
         <tr><td><label for="agent">Agent:</label> <!-- AGENT SELECTION -->
             <td><select name="agent">
