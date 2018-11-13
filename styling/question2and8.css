@@ -13,6 +13,8 @@
 }
 
 #neverPurchased {
+  padding: 5px;
+
   text-align: center;
   background-color: #f2f2f2;
   width: 175px;
@@ -25,6 +27,7 @@
 }
 
 #neverPurchased span {
+  margin-top: 2px;
   text-decoration: underline;
 }
 
