@@ -23,6 +23,7 @@
 				<li><a href="">SHOW CUSTOMER SALES</li>
 			</ul>
 		</div>
+		
 		<!-- Connects to HTML file with the database we are working with -->
 		<?php
 			include 'connectdb.php';
