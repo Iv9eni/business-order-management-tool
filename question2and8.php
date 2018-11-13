@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-		<link rel="stylesheet" type="text/css" href="styling/question2.css" />
+		<link rel="stylesheet" type="text/css" href="styling/question2and8.css" />
     <title>EBAY - Products</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
 			<ul>
         <li><a href="index.php">Home</a></li>
 				<li><a href="question1.php">View Customer Purchases</a></li>
-				<li><a class="active" href="question2.php">Products</a></li>
+				<li><a class="active" href="question2and8.php">Products</a></li>
 				<li><a href="question3.php">Create Buy Order</a></li>
 				<li><a href="question4.php">Add Customer</a></li>
 				<li><a href="question5.php">Update Phone</a></li>
@@ -35,21 +35,25 @@
       include 'connectdb.php';
     ?>
 
-    <!-- Form to find products and order in a certain manner depicted by user -->
-    <form action="getproducts.php" method="post">
+    <div id="showproduct">
+      <!-- Form to find products and order in a certain manner depicted by user -->
+      <form action="getproducts.php" method="post">
 
-      <!-- Allows user to select from ascending/descending orders through a selection bar -->
-      <select name="order">
-        <option value="ASC">Ascending</option>
-        <option value="DESC">Descending</option>
-      </select>
+        <!-- Allows user to select from ascending/descending orders through a selection bar -->
+        <select name="order">
+          <option value="ASC">Ascending</option>
+          <option value="DESC">Descending</option>
+        </select>
 
-      <!-- Radio buttons to select which attribute to order the products by -->
-      <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
-      <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
+        <br>
 
-      <input type="submit" value = "Show Products">
-    </form>
+        <!-- Radio buttons to select which attribute to order the products by -->
+        <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
+        <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
+
+        <input type="submit" value = "Show Products">
+      </form>
+    </div>
 
 
     <div id="neverPurchased">
