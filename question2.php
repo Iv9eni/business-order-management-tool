@@ -35,7 +35,7 @@
     ?>
 
     <!-- Start of 2) -->
-    <h3>PRODUCTS</h3>
+    <h3>OUR PRODUCTS</h3>
     <p>Product Ordering Options:</p>
 
     <!-- Form to find products and order in a certain manner depicted by user -->
