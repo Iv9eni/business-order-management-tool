@@ -44,9 +44,6 @@
         <option value="DESC">Descending</option>
       </select>
 
-      <!-- Line break for style B) -->
-      <hr>
-
       <!-- Radio buttons to select which attribute to order the products by -->
       <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
       <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
@@ -58,8 +55,16 @@
     <div id="neverPurchased">
       <!-- Writes descriptions of products that were never purchased -->
       <?php
+        # Query to find all products not in the list of purchased products
+        $query = 'SELECT * FROM product WHERE prodid NOT IN (SELECT productid FROM productsold)';
+        $result = mysqli_query($connection, $query);
 
-
+        # Starts an unordered list
+        echo '<ul>';
+        # Loops through table and prints every product that hasn't been purchased yet
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo '<li>' . $row["Description"] . '</li>';
+        }
        ?>
    </div>
 
