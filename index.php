@@ -73,7 +73,7 @@
 			<?php
 				# To display available customers to update
 				include 'getcustomerdata.php';
-				
+
 				# Runs two querys to get all the customers and products that customers may purchase.
 				$product_query = 'SELECT * FROM product';
 				$p_result = mysqli_query($connection, $product_query);
@@ -172,7 +172,7 @@
 
 				# Loops through list of customers and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($c_result)) {
-					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
+					echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["pNumber"]  . '</option>';
 				}
 
 				echo '</select><br>';
