@@ -15,6 +15,7 @@
 #navigationBar li {
     display: block;
     float: right;
+    padding-right: 3px;
 }
 
 #navigationBar li a {
