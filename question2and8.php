@@ -38,14 +38,14 @@
     <div id="showproduct">
       <!-- Form to find products and order in a certain manner depicted by user -->
       <form action="getproducts.php" method="post">
-
+        <span>Order Preferences:</span>
         <!-- Allows user to select from ascending/descending orders through a selection bar -->
         <select name="order">
           <option value="ASC">Ascending</option>
           <option value="DESC">Descending</option>
         </select>
 
-        <br>
+        <br><br>
 
         <!-- Radio buttons to select which attribute to order the products by -->
         <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
@@ -57,7 +57,7 @@
 
 
     <div id="neverPurchased">
-      <h2 style="text-align: center;"></h2>
+      <span>Items Never Purchased</span>
       <!-- Writes descriptions of products that were never purchased -->
       <?php
         # Query to find all products not in the list of purchased products

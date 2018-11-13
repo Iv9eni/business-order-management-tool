@@ -3,11 +3,23 @@
   margin-left: 30px;
 }
 
+#showproduct span {
+  font-size: 12px;
+  color: grey;
+}
+
 #neverPurchased {
   background-color: grey;
   width: 175px;
   height: 175px;
-  margin: 0px 0px 50px 250px;
+  margin: 0px 0px 0px 250px;
+}
+
+#neverPurchased span {
+  text-align: center;
+  font-family: "Arial";
+  border-bottom: 1px solid grey;
+  font-size: 16px;
 }
 
 #neverPurchased ul {
@@ -18,4 +30,5 @@
 #neverPurchased ul li {
   text-align: center;
   margin: auto;
+  font-family: "Arial";
 }
