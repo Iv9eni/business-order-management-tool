@@ -11,8 +11,9 @@ body {
   padding-top: 10px;
   padding-left: 40px;
 }
+
 #logo:hover {
-  opacity: 20%;
+  opacity: 0.5;
 }
 
 #navigationBar ul {
