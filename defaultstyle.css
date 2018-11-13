@@ -1,3 +1,7 @@
+body {
+  font-family: "Arial";
+}
+
 #navigationBar ul {
     list-style-type: none;
     margin: 0;
