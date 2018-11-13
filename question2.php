@@ -9,9 +9,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="defaultstyle.css" />
     <title>Product Information</title>
   </head>
   <body>
+
+    <img src="logo.png" width="100" height="60">
+
+		<!-- Allows navigation through website -->
+		<div id="navigationBar">
+			<ul>
+				<li><a href="index.php">1</a></li>
+				<li><a href="question2.php">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul>
+		</div>
+
+		<hr>
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php

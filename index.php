@@ -19,12 +19,14 @@
 		<div id="navigationBar">
 			<ul>
 				<li><a href="index.php">1</a></li>
-				<li><a href="productinformation.php">2</a></li>
-				<li><a href="">SHOW CUSTOMER SALES</a></li>
-				<li><a href="">SHOW CUSTOMER SALES</a></li>
-				<li><a href="">SHOW CUSTOMER SALES</a></li>
+				<li><a href="question2.php">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
 			</ul>
 		</div>
+
+		<hr>
 
 		<!-- Connects to HTML file with the database we are working with -->
 		<?php
@@ -35,7 +37,6 @@
 		<form action="getproductsold.php" method="post">
 
 			<!-- Allows the user to select the way purchased products by a customer are organized -->
-			<p>ORDER PRODUCT BY:</p>
 			<input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
 			<input type="radio" name="order" value="DESC">Descending<br><br>
 
