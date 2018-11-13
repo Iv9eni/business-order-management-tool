@@ -20,12 +20,13 @@
   height: 175px;
 
   position: absolute;
-  bottom: 250px;
+  bottom: 210px;
   left: 250px;
   float: left;
 }
 
 #neverPurchased span {
+  color: grey;
   margin-top: 2px;
 }
 
