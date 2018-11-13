@@ -45,6 +45,10 @@
 >>>>>>> 6cc2fdece16fc40f707c057c9f1ad9b6664f99ab
 }
 
+#customers div:hover {
+  background-color: #ffffff;
+}
+
 #submit {
   text-align: center;
   padding: 10px;
