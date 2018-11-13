@@ -34,7 +34,7 @@
     <?php
       include 'connectdb.php';
     ?>
-
+a
     <br>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
