@@ -29,6 +29,7 @@ body {
 #navigationBar li a {
     color: black;
     text-decoration: none;
+    padding-bottom: 5px;
 }
 
 #navigationBar li a:hover {
