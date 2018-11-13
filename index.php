@@ -71,6 +71,9 @@
 		<!-- To purchase a product for a customer -->
 		<form action="insertpurchase.php" method="post">
 			<?php
+				# To display available customers to update
+				include 'getcustomerdata.php';
+				
 				# Runs two querys to get all the customers and products that customers may purchase.
 				$product_query = 'SELECT * FROM product';
 				$p_result = mysqli_query($connection, $product_query);
@@ -80,8 +83,15 @@
 					die("Query 'SELECT * FROM product' FAILED");
 				}
 
-				# Shows customers
-				include 'showcustomers.php';
+				# Starts a selection operation to pick from a list of customers
+			  echo '<select name="customer">';
+
+			  # Loops through list of customers and makes them options of our selection
+			  while ($row = mysqli_fetch_assoc($c_result)) {
+			    echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
+			  }
+
+			  echo '</select><br>';
 
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
@@ -154,7 +164,9 @@
 		<form action="updatephonenumber.php" method="post">
 			<!-- To show the customers -->
 			<?php
+				# Gets customer data to print selection
 				include 'getcustomerdata.php';
+
 				# Starts a selection operation to pick from a list of customers
 				echo '<select name="customer">';
 
