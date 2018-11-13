@@ -1,6 +1,8 @@
-.submission {
+.submission table {
   padding: 10px;
+}
 
+.submission {
   margin-left: auto;
   margin-right: auto;
   height: auto;
