@@ -11,13 +11,24 @@
   text-align: center;
 }
 
+#customers {
+  text-align: center;
+  
+}
+
 #customers div {
   background-color: #e1eaea;
   padding: 10px;
   margin: 1px;
   float: left;
-  height: 75px;
-  width: 250px;
+  
+  position: relative;
+  left: auto;
+  right: auto;
+
+
+  height: auto;
+  width: auto;
 }
 
 #submit {
@@ -26,6 +37,7 @@
   width: 180px;
   height: 60px;
 
-  margin-top: auto;
-  margin-left:
+  position: absolute;
+  top: 500px;
+  right: 620px;
 }
