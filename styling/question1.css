@@ -21,6 +21,10 @@
   border-radius: 5px;
 }
 
+#customers div:hover {
+  background-color: #ffffff;
+}
+
 #submit {
   text-align: center;
   padding: 10px;
