@@ -1,9 +1,11 @@
 #organizebuttons {
   padding: 10px;
   background-color: #80ff80;
-  margin-left: auto;
+  width: 200px;
+  height: 50px;
 }
 
 #customers {
   padding: 5px;
+  float: left;
 }
