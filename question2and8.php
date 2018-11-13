@@ -45,12 +45,12 @@
           <option value="DESC">Descending</option>
         </select>
 
-        <br><br>
+        <br>
 
         <!-- Radio buttons to select which attribute to order the products by -->
         <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
         <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
-
+        <br>
         <input type="submit" value = "Show Products">
       </form>
     </div>
