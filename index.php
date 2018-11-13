@@ -26,7 +26,7 @@
 			</ul>
 		</div>
 
-		<hr>
+		<br><br>
 
 		<!-- Connects to HTML file with the database we are working with -->
 		<?php
