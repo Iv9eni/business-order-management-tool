@@ -12,10 +12,12 @@
 }
 
 #customers div {
+  background-color: #e1eaea;
   padding: 10px;
   margin: 1px;
   float: left;
-  background-color: #e1eaea;
+  height: 75px;
+  width: 250px;
 }
 
 #submit {
@@ -25,5 +27,5 @@
   height: 60px;
 
   margin-top: auto;
-  margin-left: auto;
+  margin-left:
 }
