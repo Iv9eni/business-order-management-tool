@@ -6,8 +6,8 @@
 
 #navigationBar li {
     display: block;
-    float: right;
-    padding-right: 20px;
+    float: left;
+    padding: 5px;
     text-align: center;
 }
 
@@ -16,6 +16,6 @@
     text-decoration: none;
 }
 
-#navigationBar li a.hover {
+#navigationBar li a:hover {
     color: blue;
 }
