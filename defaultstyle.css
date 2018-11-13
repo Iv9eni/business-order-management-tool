@@ -6,7 +6,8 @@ body {
 #navigationBar ul {
     list-style-type: none;
     margin: auto;
-    padding: 10px;
+    padding: 22px;
+    width: 100%;
 }
 
 #navigationBar li {
