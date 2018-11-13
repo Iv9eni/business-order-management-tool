@@ -34,11 +34,15 @@
   height: 75px;
   width: 250px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> 3a0064399f56c192b6339ee8e3f3cefe9f5412a5
 =======
   border-radius: 2px;
 >>>>>>> c36826fd395a069f5cd886393d3b56b98e12e305
+=======
+  border-radius: 5px;
+>>>>>>> 6cc2fdece16fc40f707c057c9f1ad9b6664f99ab
 }
 
 #submit {
