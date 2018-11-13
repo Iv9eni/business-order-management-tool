@@ -1,10 +1,16 @@
-.submission table {
+#tablestyle {
   padding: 10px;
-}
 
-.submission {
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   width: auto;
+}
+
+#submission {
+  width: 250px;
+  height: 35px;
+  text-align: center;
+  margin-left: auto;
 }
