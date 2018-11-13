@@ -1,6 +1,4 @@
-#body28 {
-  font-family: "Arial";
-}
+
 
 #showproduct {
   margin-top: 30px;
@@ -21,7 +19,7 @@
   background-color: grey;
   width: 175px;
   height: 175px;
-  margin: 0px 0px 0px 250px;
+  margin: 0px 0px 0px 300px;
   opacity: 0.2;
 }
 
@@ -38,4 +36,5 @@
   text-align: center;
   margin: auto;
   font-family: "Arial";
+  font-size: 14px;
 }
