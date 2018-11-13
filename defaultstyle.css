@@ -6,13 +6,13 @@ body {
 #navigationBar ul {
     list-style-type: none;
     margin: auto;
-    padding: 22px;
+    padding: 10px;
     width: 100%;
 }
 
 #navigationBar li {
     display: block;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     display: inline;
 }
