@@ -1,8 +1,8 @@
 #wrapper {
-  margin: 0px auto 0px auto;
+  margin: 5px auto 5px auto;
   padding: 20px;
   width: 50%;
-  height: -webkit-fill-available;
+  height: auto;
 
   background-color: #f2f2f2;
 
