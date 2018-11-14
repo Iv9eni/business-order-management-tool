@@ -21,9 +21,9 @@
 }
 
 #options {
-  display: inline;
+  display: block;
   width: -webkit-fill-available;
-  height: 200px;
+  height: auto;
   padding-bottom: 30px;
   margin-top: 15px;
   font-size: 14px;

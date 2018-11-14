@@ -62,10 +62,10 @@
         # End of select statement
 			  echo '</select>';
 
-        echo '<p style=""> CHOOSE PRODUCT </p>';
+        echo '<p> CHOOSE PRODUCT </p>';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<input type="radio" id="options" name="producttype" value="' . $row["ProdID"] . '" />' . $row["Description"] . ' $' . $row["CostPerItem"];
+					echo '<input id="options" type="radio" name="products" value="' . $row["ProdID"] . '" /> ' . $row["Description"] . ' $' . $row["CostPerItem"];
 				}
 			?>
 
