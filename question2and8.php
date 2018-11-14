@@ -35,45 +35,45 @@
     <?php
       include 'connectdb.php';
     ?>
+    <div id="wrapper">
+      <div id="orderByContainer">
+        <!-- Form to find products and order in a certain manner depicted by user -->
+        <form action="getproducts.php" method="post">
+          <!-- Allows user to select from ascending/descending orders through a selection bar -->
+          <select name="order">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+          </select>
 
-    <div id="showproduct">
-      <span>Order Preferences:</span> <br>
-      <!-- Form to find products and order in a certain manner depicted by user -->
-      <form action="getproducts.php" method="post">
-        <!-- Allows user to select from ascending/descending orders through a selection bar -->
-        <select name="order">
-          <option value="ASC">Ascending</option>
-          <option value="DESC">Descending</option>
-        </select>
+          <br>
 
-        <br>
-
-        <!-- Radio buttons to select which attribute to order the products by -->
-        <input type="radio" name="orderby" value="costperitem" checked="checked">   ORDER BY PRICE<br>
-        <input type="radio" name="orderby" value="description">   ORDER BY NAME<br>
-        <br>
-        <input id="subutton" type="submit" value = "Show Products">
-      </form>
-    </div>
+          <!-- Radio buttons to select which attribute to order the products by -->
+          <input type="radio" name="orderby" value="costperitem" checked="checked">   ORDER BY PRICE<br>
+          <input type="radio" name="orderby" value="description">   ORDER BY NAME<br>
+          <br>
+          <input id="submitStyle" type="submit" value = "Show Products">
+        </form>
+      </div>
 
 
-    <div id="neverPurchased">
-      <span>Items Never Purchased</span><br>
-      <!-- Writes descriptions of products that were never purchased -->
-      <?php
-        # Query to find all products not in the list of purchased products
-        $query = 'SELECT * FROM product WHERE prodid NOT IN (SELECT productid FROM productsold)';
-        $result = mysqli_query($connection, $query);
+      <div id="neverPurchased">
+        <span>Items Never Purchased</span><br>
+        <!-- Writes descriptions of products that were never purchased -->
+        <?php
+          # Query to find all products not in the list of purchased products
+          $query = 'SELECT * FROM product WHERE prodid NOT IN (SELECT productid FROM productsold)';
+          $result = mysqli_query($connection, $query);
 
-        # Starts an unordered list
-        echo '<ul>';
-        # Loops through table and prints every product that hasn't been purchased yet
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo '<li>' . $row["Description"] . '</li>';
-        }
-        # Ends the unordered list
-        echo '</ul>';
-       ?>
+          # Starts an unordered list
+          echo '<ul>';
+          # Loops through table and prints every product that hasn't been purchased yet
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<li>' . $row["Description"] . '</li>';
+          }
+          # Ends the unordered list
+          echo '</ul>';
+         ?>
+     </div>
    </div>
 
   </body>

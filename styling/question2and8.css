@@ -1,16 +1,20 @@
-#showproduct {
-  margin-top: 30px;
-  margin-left: 30px;
-}
+#wrapper {
+  margin: 20px auto auto auto;
+  padding: 15px 20px 5px 20px;
+  width: 43%;
+  height: auto;
 
-#showproduct span {
-  font-size: 15px;
-  color: grey;
-}
-
-#subutton{
-  padding: 15px;
+  background-color: #f2f2f2;
   text-align: center;
+  font-family: "Arial";
+}
+
+#orderByContainer {
+  padding: 15px;
+}
+
+#submitStyle {
+  padding: 15px;
 }
 
 #neverPurchased {
