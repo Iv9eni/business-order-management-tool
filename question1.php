@@ -50,7 +50,7 @@
         <div id="organizebuttons">
           <!-- Allows the user to select the way purchased products by a customer are organized -->
           <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
-          <input type="radio" name="order" value="DESC">Descending<br><br>
+          <input type="radio" name="order" value="DESC">Descending<br>
         </div>
 
         <!-- Button for user to accept all values of search and search the products purchased by customer -->
