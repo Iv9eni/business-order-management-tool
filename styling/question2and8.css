@@ -1,7 +1,7 @@
 #wrapper {
   display: block;
   margin: 20px auto auto auto;
-  padding: 15px 20px 5px 20px;
+  padding: 15px 20px 30px 20px;
   width: 43%;
   height: auto;
 
@@ -18,4 +18,16 @@
 
 #orderByContainer form p{
   margin: 5px;
+}
+
+#orderByContainer form select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 180px;
+}
+
+#submitStyle {
+    padding: 10px;
+    margin: 20px;
 }
