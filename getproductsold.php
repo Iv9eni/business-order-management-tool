@@ -10,7 +10,16 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-	<title>Customers Products</title>
+
+	<!-- To stylize the page a little -->
+	<style>
+		h5, p {
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+	</style>
+
+	<title>EBAY - Customers Products</title>
 </head>
 <body>
 	<!-- EBAY logo on every site -->
@@ -35,7 +44,7 @@
 		include 'connectdb.php';
 	?>
 
-	<h3> Products Purchased by Selected Customer </h3>
+	<h5> Products Purchased by Selected Customer: </h5>
 
 	<ul style="list-style-type: none">
 	<?php
