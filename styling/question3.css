@@ -20,12 +20,13 @@
   color: #e33636;
 }
 
-#productButtons {
+#options {
   display: inline;
   width: -webkit-fill-available;
   height: 200px;
   padding-bottom: 30px;
   margin-top: 15px;
+  font-size: 14px;
 }
 
 #qualityTxt {
