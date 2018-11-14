@@ -64,7 +64,7 @@
         echo '<br>';
 
 
-        echo '<p style="margin-bottom: 30px; margin-top: 30px"> PRODUCTS </p>';
+        echo '<p style="margin-bottom: 30px; margin-top: 30px;"> PRODUCTS </p>';
 
         # Putting all the radio buttons into an unordered list
         echo '<ul id="productContainer">';
