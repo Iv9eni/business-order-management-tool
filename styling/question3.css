@@ -1,9 +1,9 @@
 #wrapper {
   padding: 8px;
-  background-color: #FF7373;
+  background-color: #88e758;
   width: 50%;
   height: 90%;
-  margin: auto;
+  margin: auto auto auto auto;
   text-align: center;
 }
 
