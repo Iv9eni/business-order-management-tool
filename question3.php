@@ -67,7 +67,7 @@
         echo '<div id="productButtons">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<input type="radio" name="producttype" value=' . $row["ProdID"] . '><p>' . $row["Description"] . ' $' . $row["CostPerItem"] . </p>;
+					echo '<input type="radio" name="producttype" value=' . $row["ProdID"] . '><p>' . $row["Description"] . ' $' . $row["CostPerItem"] . '</p>';
 				}
         echo '</div>';
 			?>
