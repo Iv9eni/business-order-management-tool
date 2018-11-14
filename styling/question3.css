@@ -1,11 +1,12 @@
 #wrapper {
+  margin: 0px auto 0px auto;
   padding: 20px;
-  background-color: #f2f2f2;
   width: 50%;
-  height: 100%;
-  margin: auto auto 0 auto;
-  text-align: center;
+  height: -webkit-fill-available;
 
+  background-color: #f2f2f2;
+
+  text-align: center;
   font-family: "Arial";
 }
 
@@ -18,30 +19,38 @@
   color: #e33636;
 }
 
-.customerSelect option {
+.customerSelect select {
   color: black;
 }
 
 #productButtons {
-  display: inline;
-  padding: 4px 8px 4px 8px;
-  width: 200px;
-  height: 150px;
+  display: inline-grid;
+  width: 300px;
+  height: 200px;
+  padding-bottom: 30px;
+  margin-top: 15px;
+}
+
+#productButtons p {
+  padding-bottom: 10px;
 }
 
 #productButtons input[type="radio"] {
-  padding: 4px 6px 4px 4px;
+  padding: 10px 6px 10px 20px;
+  vertical-align: middle;
 }
 
 #qualityTxt {
-  display: inline;
-  margin: 10px 0px 0px 0px;
-  vert
+  display: block;
+  margin: 20px auto 0px auto;
+  padding: 5px;
 }
 
 #subButton {
-  display: inline;
-  float: right;
+  display: block;
   height: 30px;
-  width: auto;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
 }
