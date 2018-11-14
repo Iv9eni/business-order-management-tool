@@ -13,6 +13,8 @@
   float: left;
   height: auto;
   width: auto;
+
+  margin-left: auto;
 }
 
 #customers div:hover {
