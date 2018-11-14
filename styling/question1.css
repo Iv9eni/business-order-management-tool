@@ -74,10 +74,15 @@
 >>>>>>> de454755ea3da25c5b35b8d1e2dc32470d9c5073
 =======
   position: relative;
+<<<<<<< HEAD
   top: 250px;
 <<<<<<< HEAD
   right: 450px;
 >>>>>>> 42e00466bdac1a28df6ab6c052fd3fe6ca25a4ce
 =======
 >>>>>>> 48c7d17054d8600b23c2e3fad4411cfbc9573997
+=======
+  top: 200px;
+  left: 150px;
+>>>>>>> d5d71d28aeb64e0c340857d81a98e288a6ea5dcb
 }
