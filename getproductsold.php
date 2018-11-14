@@ -13,7 +13,7 @@
 
 	<!-- To stylize the page a little -->
 	<style>
-		ul, h3 {
+		ol, h3 {
 			margin-left: 50px;
 			margin-top: 50px;
 		}
@@ -46,7 +46,7 @@
 
 	<h3> Products Purchased by Selected Customer: </h3>
 
-	<ul>
+	<ol>
 	<?php
 		# Initializes the variable with the customer id that was selected in the index page and runs a query to find their purchased products
 		$selectedID = (string)$_POST["customers"];
@@ -71,7 +71,7 @@
 		}
 		mysqli_free_result($result);
 	?>
-</ul>
+</ol>
 
 	<!-- Closes connection -->
 	<?php
