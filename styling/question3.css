@@ -1,6 +1,8 @@
 #wrapper {
   padding: 8px;
-  background-color: #A6B4C5;
+  background-color: #FF7373;
+  width: 50%;
+  height: 90%;
 }
 
 .customerSelect {
