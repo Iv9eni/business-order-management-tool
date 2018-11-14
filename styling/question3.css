@@ -9,7 +9,7 @@
   font-family: "Arial";
 }
 
-.customerSelect  {
+#customerSelect  {
   display: inline;
   margin-top: 10px;
   margin-bottom: 10px;
