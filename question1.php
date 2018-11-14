@@ -37,13 +37,6 @@
     ?>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
-      <!-- Button for user to accept all values of search and search the products purchased by customer -->
-      <input type="submit" value="Show Purchased Products" id="submit"><br>
-        <div id="organizebuttons">
-          <!-- Allows the user to select the way purchased products by a customer are organized -->
-          <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
-          <input type="radio" name="order" value="DESC">Descending<br><br>
-        </div>
 
         <!-- Neatly stack elements -->
         <div id="customers">
@@ -52,6 +45,14 @@
             include 'selectcustomer.php';
           ?>
         </div>
+
+        <!-- Button for user to accept all values of search and search the products purchased by customer -->
+        <input type="submit" value="Show Purchased Products" id="submit"><br>
+          <div id="organizebuttons">
+            <!-- Allows the user to select the way purchased products by a customer are organized -->
+            <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
+            <input type="radio" name="order" value="DESC">Descending<br><br>
+          </div>
 
     </form>
   </body>

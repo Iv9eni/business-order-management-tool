@@ -1,20 +1,24 @@
 #organizebuttons {
   padding: 10px;
-  width: auto;
-  height: auto;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-left: auto;
+  width: fit-content;
+  height: 40px;
+  margin-left: 60px;
+  margin bottom: 50px;
+  background-color: #e1eaea;
 }
 
 #customers {
-    margin-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  display: table;
 }
 
 #customers div {
+  display: inline-block;
   background-color: #e1eaea;
   padding: 10px;
-  margin: 1px;
+  margin: 15px;
   float: left;
   height: auto;
   width: auto;
@@ -25,9 +29,12 @@
 }
 
 #submit {
-  padding: 10px;
   width: 180px;
   height: 60px;
-  margin-left: 60px;
-  margin-top: 30px;
+
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  display: block;
 }
