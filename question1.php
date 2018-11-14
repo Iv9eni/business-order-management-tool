@@ -41,7 +41,6 @@
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
       <div id="organizebuttons">
-        <b>Order Products by:</b>
         <!-- Allows the user to select the way purchased products by a customer are organized -->
         <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
         <input type="radio" name="order" value="DESC">Descending<br><br>
