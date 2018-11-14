@@ -15,12 +15,12 @@
   width: 100%;
 }
 
-#tablestyle td {
+#tableContainer td {
   padding: 10px 0px 10px 0px;
   border-bottom: 1px solid #ababab;
 }
 
-#tablestyle tr:last-child {
+#tableContainer tr:last-child {
   border-bottom: 0px;
 }
 
