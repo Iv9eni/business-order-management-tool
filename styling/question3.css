@@ -9,6 +9,13 @@
   font-family: "Arial";
 }
 
+ul {
+  list-style-type: none;
+}
+li {
+  margin-bottom: 10px;
+}
+
 #customerSelect  {
   display: inline;
   margin: 15px 0px 0px 100px;
