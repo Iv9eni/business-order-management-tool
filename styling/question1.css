@@ -23,9 +23,8 @@
   padding: 10px;
   width: fit-content;
   height: 40px;
-  margin-left: 60px;
-  margin bottom: 50px;
-  background-color: #e1eaea;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #submit {
