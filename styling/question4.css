@@ -20,8 +20,8 @@
   border-bottom: 1px solid #ababab;
 }
 
-#tableContainer tr:last-child {
-  border-bottom: 0px;
+label {
+  display: table;
 }
 
 #submission {
