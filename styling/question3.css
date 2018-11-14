@@ -1,6 +1,6 @@
 #wrapper {
   margin: 20px auto auto auto;
-  padding: 15px;
+  padding: 15px 20px 5px 20px;
   width: 43%;
   height: auto;
 
@@ -16,17 +16,12 @@
   padding: 5px 12px 5px 12px;
 }
 
-.customerSelect p {
-  color: #e33636;
-}
-
 #options {
   display: block;
   width: -webkit-fill-available;
   height: auto;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   margin-top: 15px;
-  font-size: 14px;
 }
 
 #qualityTxt {
