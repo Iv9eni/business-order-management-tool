@@ -27,6 +27,7 @@
   padding-bottom: 30px;
   margin-top: 15px;
   font-family:serif;
+  vertical-align: bottom; 
 }
 
 #qualityTxt {
