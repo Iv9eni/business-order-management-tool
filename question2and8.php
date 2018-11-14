@@ -58,7 +58,7 @@
 
 
       <div id="neverPurchasedContainer">
-        <span>Items Never Purchased</span><br>
+        <p>Items Never Purchased</p><br>
         <!-- Writes descriptions of products that were never purchased -->
         <?php
           # Query to find all products not in the list of purchased products
