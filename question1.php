@@ -35,24 +35,23 @@
     <?php
       include 'connectdb.php';
     ?>
-
-    <!-- Button for user to accept all values of search and search the products purchased by customer -->
-    <input type="submit" value="Show Purchased Products" id="submit"><br>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
-      <div id="organizebuttons">
-        <!-- Allows the user to select the way purchased products by a customer are organized -->
-        <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
-        <input type="radio" name="order" value="DESC">Descending<br><br>
-      </div>
+      <!-- Button for user to accept all values of search and search the products purchased by customer -->
+      <input type="submit" value="Show Purchased Products" id="submit"><br>
+        <div id="organizebuttons">
+          <!-- Allows the user to select the way purchased products by a customer are organized -->
+          <input type="radio" name="order" value="ASC" checked="checked">Ascending<br>
+          <input type="radio" name="order" value="DESC">Descending<br><br>
+        </div>
 
-      <!-- Neatly stack elements -->
-      <div id="customers">
-        <!-- Shows all the customers user may select from -->
-        <?php
-          include 'selectcustomer.php';
-        ?>
-      </div>
+        <!-- Neatly stack elements -->
+        <div id="customers">
+          <!-- Shows all the customers user may select from -->
+          <?php
+            include 'selectcustomer.php';
+          ?>
+        </div>
 
     </form>
   </body>
