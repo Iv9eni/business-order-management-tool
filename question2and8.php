@@ -40,6 +40,7 @@
       <div id="orderByContainer">
         <!-- Form to find products and order in a certain manner depicted by user -->
         <form action="getproducts.php" method="post">
+          <p> ORDER PREFERENCES: </p>
           <!-- Allows user to select from ascending/descending orders through a selection bar -->
           <select name="order">
             <option value="ASC">Ascending</option>
