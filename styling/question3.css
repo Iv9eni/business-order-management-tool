@@ -9,13 +9,17 @@
   font-family: "Arial";
 }
 
-.customerSelect {
+.customerSelect  {
   display: inline;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px 12px 5px 12px;
 
-  color: red;
+  color: #FF7373;
+}
+
+.customerSelect select {
+  color: black;
 }
 
 #productButtons {
@@ -26,9 +30,9 @@
 }
 
 #productButtons input[type="radio"] {
-  margin-top: -1px;
-  vertical-align: middle;
-
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px;
 }
 
 #qualityTxt {
