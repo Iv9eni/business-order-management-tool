@@ -8,10 +8,10 @@
 }
 
 #customers {
+  display: table;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
-  display: table;
 }
 
 #customers div {
