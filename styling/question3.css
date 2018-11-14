@@ -11,17 +11,13 @@
 
 #customerSelect  {
   display: inline;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 15px 0px 0px 100px;
+  padding: 5px 0px 5px 5px;
 }
 
 #productContainer {
   display: block;
-  width: -webkit-fill-available;
-  height: auto;
-  padding-bottom: 23px;
-  margin-top: 15px;
-
+  list-style-type: none;
 }
 
 #qualityTxt {
