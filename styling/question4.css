@@ -27,7 +27,6 @@ label {
 #submission {
   width: 220px;
   height: 35px;
-  margin: 20px auto 15px auto;
-
-
+  margin: 20px auto 15px 25px;
+  display: table;
 }
