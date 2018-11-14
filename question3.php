@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styling/question3.css" />
     <title>EBAY - Create Buy Order</title>
   </head>
   <body>
@@ -52,8 +53,8 @@
 				}
 
 				# Starts a selection operation to pick from a list of customers
-			  echo '<select name="customer">';
-
+			  echo '<select name="customer" id="customerSelect">';
+        echo '<p> Customer: </p>';
 			  # Loops through list of customers and makes them options of our selection
 			  while ($row = mysqli_fetch_assoc($c_result)) {
 			    echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
@@ -61,15 +62,19 @@
 
 			  echo '</select><br>';
 
+        # To styalize the radio buttons seperately
+        echo '<div id="productButtons">';
+        echo '<p> Product: </p>';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
 					echo '<input type="radio" value="' . $row["ProdID"] . '">' . $row["Description"] . ' $' . $row["CostPerItem"] . '<br>';
 				}
+        echo '</div>';
 			?>
 
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
-			Quantity: <input type="text" name="quantity" placeholder="1">
-			<br><input type="submit" value="Insert Product Purchase">
+			<input type="text" name="quantity" placeholder="Quantity" id="qualityTxt">
+			<br><input type="submit" value="Insert Product Purchase" id="subButton">
 		</form>
 
   </body>
