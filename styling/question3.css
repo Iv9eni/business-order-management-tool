@@ -12,14 +12,13 @@
 }
 
 #qualityTxt {
-  display: block;
+  display: inline;
 }
 
 #productButtons, #qualityTxt {
   margin-left: 250px;
   width: 200px;
   height: 150px;
-  background-color: cyan;
 }
 
 #subButton {
