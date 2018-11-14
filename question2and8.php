@@ -56,7 +56,7 @@
       </div>
 
 
-      <div id="neverPurchased">
+      <div id="neverPurchasedContainer">
         <span>Items Never Purchased</span><br>
         <!-- Writes descriptions of products that were never purchased -->
         <?php
