@@ -1,3 +1,8 @@
+#wrapper {
+  padding: 8px;
+  background-color: #A6B4C5;
+}
+
 .customerSelect {
   display: inline;
 }
@@ -7,14 +12,13 @@
 }
 
 #qualityTxt {
-  display: block;
+  display: inline;
 }
 
 #productButtons, #qualityTxt {
   margin-left: 250px;
   width: 200px;
   height: 150px;
-  background-color: cyan;
 }
 
 #subButton {

@@ -35,7 +35,7 @@
     <?php
       include 'connectdb.php';
     ?>
-
+    <div id="wrapper">
     <!-- Start of 3) -->
 		<!-- To purchase a product for a customer -->
 		<form action="insertpurchase.php" method="post">
@@ -76,6 +76,6 @@
 			<input type="text" name="quantity" placeholder="Quantity" id="qualityTxt">
 			<br><input type="submit" value="Insert Product Purchase" id="subButton">
 		</form>
-
+  </div>
   </body>
 </html>
