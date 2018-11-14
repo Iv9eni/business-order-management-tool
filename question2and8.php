@@ -35,6 +35,7 @@
     <?php
       include 'connectdb.php';
     ?>
+
     <div id="wrapper">
       <div id="orderByContainer">
         <!-- Form to find products and order in a certain manner depicted by user -->
@@ -50,7 +51,6 @@
           <!-- Radio buttons to select which attribute to order the products by -->
           <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
           <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
-          <br>
           <input id="submitStyle" type="submit" value = "Show Products">
         </form>
       </div>
