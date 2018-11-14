@@ -17,8 +17,8 @@
 }
 
 #customerSelect  {
-  display: inline;
-  margin: 15px 0px 0px 100px;
+  display: block;
+  margin: 15px 0px 0px 0px;
   padding: 5px 0px 5px 5px;
 }
 
