@@ -20,14 +20,8 @@
   color: #e33636;
 }
 
-.inline-grid {
-   display: inline-grid;
-   vertical-align: bottom;
-   width: 49%;
-}
-
 #productButtons {
-  display: inline-grid;
+  display: inline;
   width: -webkit-fill-available;
   height: 200px;
   padding-bottom: 30px;
