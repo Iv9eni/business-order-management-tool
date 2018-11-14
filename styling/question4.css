@@ -17,11 +17,11 @@
 
 #tableContainer td {
   padding: 10px 0px 10px 0px;
-  border-bottom: 1px solid #ababab;
 }
 
 label {
   display: table;
+  font-size: 14px;
 }
 
 #submission {
