@@ -16,7 +16,6 @@
   padding: 5px 12px 5px 12px;
 
   color: red;
-  text-decoration-style: wavy;
 }
 
 #productButtons {
@@ -24,6 +23,12 @@
   padding: 4px 8px 4px 8px;
   width: 200px;
   height: 150px;
+}
+
+#productButtons input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+
 }
 
 #qualityTxt {
