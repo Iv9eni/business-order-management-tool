@@ -64,7 +64,7 @@
 
         # To styalize the radio buttons seperately
         echo '<div id="productButtons">';
-        echo '<p> CHOOSE PRODUCT </p>';
+        echo '<p> CHOOSE PRODUCT </p><br>';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
 					echo '<input type="radio" name="product" value="' . $row["ProdID"] . '">' . $row["Description"] . ' $' . $row["CostPerItem"] . '<br>';
@@ -73,7 +73,7 @@
 			?>
 
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
-			<input type="text" name="quantity" placeholder="Quantity" id="qualityTxt">
+			<input type="text" name="quantity" placeholder="Quantity" id="qualityTxt" size="15">
 			<br><input type="submit" value="Insert Product Purchase" id="subButton">
 		</form>
   </div>
