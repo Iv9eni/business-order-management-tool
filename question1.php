@@ -39,6 +39,10 @@
     <br>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="getproductsold.php" method="post">
+      
+      <!-- Button for user to accept all values of search and search the products purchased by customer -->
+      <input type="submit" value="Show Purchased Products" id="submit">
+
       <div id="organizebuttons">
         <span><b>Order Products by:</b></span><br>
         <!-- Allows the user to select the way purchased products by a customer are organized -->
@@ -53,9 +57,6 @@
           include 'selectcustomer.php';
         ?>
       </div>
-
-      <!-- Button for user to accept all values of search and search the products purchased by customer -->
-      <input type="submit" value="Show Purchased Products" id="submit">
 
     </form>
   </body>
