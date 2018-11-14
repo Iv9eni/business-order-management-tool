@@ -61,7 +61,7 @@
         # End of select statement
 			  echo '</select>';
 
-        <br>
+        echo '<br>';
 
         echo '<p style="margin-top: 5px"> PRODUCTS </p>';
 				# Loops through list of products and makes them options of our selection
