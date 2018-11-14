@@ -67,7 +67,7 @@
         echo '<p style="margin-bottom: 30px"> PRODUCTS </p>';
 
         # Putting all the radio buttons into an unordered list
-        echo '<ul id="productContainer">'
+        echo '<ul id="productContainer">';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
 					echo '<li><input type="radio" name="productsid" value=' . $row["ProdID"] . ' /> ' . $row["Description"] . ' $' . $row["CostPerItem"] . '</li>';
