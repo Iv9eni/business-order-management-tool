@@ -35,7 +35,7 @@
       include 'connectdb.php';
     ?>
 
-    <!-- Start of 6) Deleting a customer -->
+    <!-- Start of 9) Deleting a customer -->
     <!-- Deletes a customer -->
     <form action="deletecustomer.php" method="post">
       <!-- To show the customers -->
