@@ -22,9 +22,6 @@
 #submission {
   width: 220px;
   height: 35px;
-  text-align: center;
   margin-left: auto;
-
-  position: absolute;
-  left: 530px;
+  margin-right: center;
 }
