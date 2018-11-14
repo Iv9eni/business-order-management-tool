@@ -9,9 +9,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
 	<title>Customers Products</title>
 </head>
 <body>
+	<!-- EBAY logo on every site -->
+	<img id="logo" src="logo.png" width="420" height="90">
+
+	<!-- Allows navigation through website -->
+	<div id="navigationBar">
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a class="active" href="question1.php">View Customer Purchases</a></li>
+			<li><a href="question2and8.php">Products</a></li>
+			<li><a href="question3.php">Create Buy Order</a></li>
+			<li><a href="question4.php">Add Customer</a></li>
+			<li><a href="question5.php">Update Phone</a></li>
+			<li><a href="question6.php">Delete Customer</a></li>
+			<li><a href="question9.php">Order Summary</a></li>
+		</ul>
+	</div>
+
 	<!-- Connects to the database -->
 	<?php
 		include 'connectdb.php';
@@ -19,7 +37,7 @@
 
 	<h3> Products Purchased by Selected Customer </h3>
 
-	<ol>
+	<ul style="list-style-type: none">
 	<?php
 		# Initializes the variable with the customer id that was selected in the index page and runs a query to find their purchased products
 		$selectedID = (string)$_POST["customers"];
@@ -40,11 +58,11 @@
 
 		# Loops through each row in the query
 		while ($row = mysqli_fetch_assoc($result)) {
-			echo '<li>' . $row["description"] . '</li>';
+			echo '<li style="padding: 5px">' . $row["description"] . '</li>';
 		}
 		mysqli_free_result($result);
 	?>
-	</ol>
+</ul>
 
 	<!-- Closes connection -->
 	<?php
