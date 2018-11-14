@@ -13,7 +13,7 @@
 
 	<!-- To stylize the page a little -->
 	<style>
-		ul, h5 {
+		ul, h3 {
 			margin-left: 50px;
 			margin-top: 50px;
 		}
@@ -44,7 +44,7 @@
 		include 'connectdb.php';
 	?>
 
-	<h5> Products Purchased by Selected Customer: </h5>
+	<h3> Products Purchased by Selected Customer: </h3>
 
 	<ul style="list-style-type: none">
 	<?php
