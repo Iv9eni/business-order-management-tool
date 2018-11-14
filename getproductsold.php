@@ -13,7 +13,7 @@
 
 	<!-- To stylize the page a little -->
 	<style>
-		h5, p {
+		ul, h5 {
 			margin-left: 50px;
 			margin-top: 50px;
 		}
