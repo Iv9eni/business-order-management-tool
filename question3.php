@@ -53,8 +53,7 @@
 				}
 
 				# Starts a selection operation to pick from a list of customers
-        echo '<p class="customerSelect"> CUSTOMER: </p>';
-			  echo '<select name="customer" class="customerSelect">';
+			  echo '<select name="customer" id="customerSelect">';
 			  # Loops through list of customers and makes them options of our selection
 			  while ($row = mysqli_fetch_assoc($c_result)) {
 			    echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
@@ -62,10 +61,12 @@
         # End of select statement
 			  echo '</select>';
 
-        echo '<p> CHOOSE PRODUCT </p>';
+        <br>
+
+        echo '<p style="margin-top: 5px"> PRODUCTS </p>';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<input id="options" type="radio" name="products" value="' . $row["ProdID"] . '" /> ' . $row["Description"] . ' $' . $row["CostPerItem"];
+					echo '<input type="radio" id="options" name="productsid" value=' . $row["ProdID"] . ' /> ' . $row["Description"] . ' $' . $row["CostPerItem"];
 				}
 			?>
 
