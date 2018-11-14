@@ -46,7 +46,7 @@
 
 	<h3> Products Purchased by Selected Customer: </h3>
 
-	<ul style="list-style-type: none">
+	<ul>
 	<?php
 		# Initializes the variable with the customer id that was selected in the index page and runs a query to find their purchased products
 		$selectedID = (string)$_POST["customers"];
