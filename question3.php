@@ -62,14 +62,11 @@
         # End of select statement
 			  echo '</select>';
 
-        echo '<p> CHOOSE PRODUCT </p>';
-        # To styalize the radio buttons seperately
-        echo '<div id="productButtons">';
+        echo '<p style=""> CHOOSE PRODUCT </p>';
 				# Loops through list of products and makes them options of our selection
 				while ($row = mysqli_fetch_assoc($p_result)) {
-					echo '<input type="radio" id="options" name="producttype" value=' . $row["ProdID"] . '>' . $row["Description"] . ' <b>$' . $row["CostPerItem"] . '</b>';
+					echo '<input type="radio" id="options" name="producttype" value="' . $row["ProdID"] . '" />' . $row["Description"] . ' $' . $row["CostPerItem"];
 				}
-        echo '</div>';
 			?>
 
 			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
