@@ -5,28 +5,29 @@
   height: 100%;
   margin: auto auto auto auto;
   text-align: center;
+  display: block;
 }
 
 .customerSelect {
-  display: inline;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 #productButtons {
-  display: inline;
+  display: block;
   padding: 4px 8px 4px 8px;
   width: 200px;
   height: 150px;
 }
 
 #qualityTxt {
-  display: inline;
+  display: inline-block;
   margin: 10px 0 0 0;
 }
 
 #subButton {
-  display: block;
+  display: inline-block;
   float: right;
   height: 30px;
   width: auto;
