@@ -42,14 +42,15 @@
       <form action="insertcustomer.php" method="post">
 
           <!-- Table to neatly organize the textboxes and labels for them -->
-          <table id="tablestyle">
+          <table id="tableContainer">
 
           <!-- Generates new ID for the customer -->
           <?php
             include 'findcustomerid.php';
 
             # Prints the ID for the user to know when adding a new customer
-            echo '<tr><td> ID: <td><b>' . $newID  . '</b>';
+            echo '<tr><td><label for="ID"> ID:</label>';
+            echo '<td><b>' . $newID  . '</b>';
           ?>
 
           <!-- This is a table and its elements for neat organization for selection -->
