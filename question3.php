@@ -54,7 +54,7 @@
   				}
 
   				# Starts a selection operation to pick from a list of customers
-  			  echo '<p style="display: block"> CUSTOMER </p><select name="customer" id="customerSelect">';
+  			  echo '<p style="display: block; margin-bottom: 20px;"> CUSTOMER </p><select name="customer" id="customerSelect">';
   			  # Loops through list of customers and makes them options of our selection
   			  while ($row = mysqli_fetch_assoc($c_result)) {
   			    echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . '</option>';
@@ -77,7 +77,7 @@
   			?>
 
   			<!-- Asks the user the quantity of the product chosen they would like to purchase -->
-  			<input type="text" name="quantity" placeholder="Quantity" id="qualityTxt" size="15">
+  			<input type="text" name="quantity" placeholder="Quantity" id="quantityTxt" size="15">
   			<br><input type="submit" value="Insert Product Purchase" id="subButton">
   		</form>
     </div>
