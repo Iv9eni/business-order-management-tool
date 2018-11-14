@@ -53,12 +53,13 @@
           <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
           <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
           <input id="submitStyle" type="submit" value = "Show Products">
+          <hr>
         </form>
       </div>
 
 
       <div id="neverPurchasedContainer">
-        <p>Items Never Purchased</p><br>
+        <p>ITEMS NEVER PURCHASED: </p><br>
         <!-- Writes descriptions of products that were never purchased -->
         <?php
           # Query to find all products not in the list of purchased products
