@@ -16,8 +16,8 @@
   padding: 10px;
   margin: 1px;
   float: left;
-  height: 75px;
-  width: 250px;
+  height: auto;
+  width: auto;
 }
 
 #customers div:hover {
@@ -31,5 +31,5 @@
 
   position: relative;
   top: 200px;
-  right: 150px;
+  right: 300px;
 }
