@@ -36,57 +36,61 @@
       include 'connectdb.php';
     ?>
 
-    <!-- START OF 4) Inserting a new customer -->
-    <form action="insertcustomer.php" method="post">
+    <div id="wrapper">
 
-        <!-- Table to neatly organize the textboxes and labels for them -->
-        <table id="tablestyle">
+      <!-- START OF 4) Inserting a new customer -->
+      <form action="insertcustomer.php" method="post">
 
-        <!-- Generates new ID for the customer -->
-        <?php
-          include 'findcustomerid.php';
+          <!-- Table to neatly organize the textboxes and labels for them -->
+          <table id="tablestyle">
 
-          # Prints the ID for the user to know when adding a new customer
-          echo '<tr><td> ID: <td><b>' . $newID  . '</b>';
-        ?>
+          <!-- Generates new ID for the customer -->
+          <?php
+            include 'findcustomerid.php';
 
-        <!-- This is a table and its elements for neat organization for selection -->
-        <tr><td><label for="firstName">First Name:</label> <!-- FIRST NAME -->
-          <td><input type="text" name="firstName" placeholder="John">
+            # Prints the ID for the user to know when adding a new customer
+            echo '<tr><td> ID: <td><b>' . $newID  . '</b>';
+          ?>
 
-        <tr><td><label for="lastName">Last Name:</label> <!-- LAST NAME -->
-          <td><input type="text" name="lastName" placeholder="Doe"><br>
+          <!-- This is a table and its elements for neat organization for selection -->
+          <tr><td><label for="firstName">First Name:</label> <!-- FIRST NAME -->
+            <td><input type="text" name="firstName" placeholder="John">
 
-        <tr><td><label for="address">Address:</label> <!-- ADDRESS -->
-          <td><input type="text" name="address" placeholder="North Korea"><br>
+          <tr><td><label for="lastName">Last Name:</label> <!-- LAST NAME -->
+            <td><input type="text" name="lastName" placeholder="Doe"><br>
 
-        <tr><td><label for="pNumber">Phone Number:</label> <!-- PHONE NUMBER -->
-          <td><input type="text" name="pNumber" placeholder="***-****"><br>
+          <tr><td><label for="address">Address:</label> <!-- ADDRESS -->
+            <td><input type="text" name="address" placeholder="North Korea"><br>
 
-        <tr><td><label for="agent">Agent:</label> <!-- AGENT SELECTION -->
-            <td><select name="agent">
+          <tr><td><label for="pNumber">Phone Number:</label> <!-- PHONE NUMBER -->
+            <td><input type="text" name="pNumber" placeholder="***-****"><br>
 
-        <!-- PHP to display agents user can select from -->
-        <?php
-          # Query to find all agents from agent table
-          $query = 'SELECT * FROM agent';
-          $result = mysqli_query($connection, $query);
+          <tr><td><label for="agent">Agent:</label> <!-- AGENT SELECTION -->
+              <td><select name="agent">
 
-          # Checks if query successful
-          if (!$result) {
-            die("Something went wrong looking for agents!");
-          }
+          <!-- PHP to display agents user can select from -->
+          <?php
+            # Query to find all agents from agent table
+            $query = 'SELECT * FROM agent';
+            $result = mysqli_query($connection, $query);
 
-          # Loops through all rows of agent and adds them as option to the selection
-          while ($row = mysqli_fetch_assoc($result)) {
-            echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
-          }
-        ?>
-        </table>
+            # Checks if query successful
+            if (!$result) {
+              die("Something went wrong looking for agents!");
+            }
 
-        <!-- Button to submit details and create new customer -->
-        <input type="submit" value="Add New Customer" id="submission">
-    </form>
+            # Loops through all rows of agent and adds them as option to the selection
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
+            }
+          ?>
+          </table>
+
+          <!-- Button to submit details and create new customer -->
+          <input type="submit" value="Add New Customer" id="submission">
+      </form>
+
+    </div>
 
   </body>
 </html>
