@@ -2,18 +2,20 @@
   padding: 8px;
   background-color: #f2f2f2;
   width: 50%;
-  height: 100%;
+  height: auto;
   margin: auto auto auto auto;
   text-align: center;
 }
 
 .customerSelect {
   display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #productButtons {
   display: inline;
-  margin-left: auto;
+  padding: 4 8 4 8;
   width: 200px;
   height: 150px;
 }
