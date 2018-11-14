@@ -53,7 +53,7 @@
 				}
 
 				# Starts a selection operation to pick from a list of customers
-        echo '<p class="customerSelect"> CUSTOMER: </p>';
+        echo '<p class="customerSelect"> CUSTOMER:           </p>';
 			  echo '<select name="customer" class="customerSelect">';
 			  # Loops through list of customers and makes them options of our selection
 			  while ($row = mysqli_fetch_assoc($c_result)) {
