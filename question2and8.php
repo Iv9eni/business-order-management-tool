@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
 		<link rel="stylesheet" type="text/css" href="styling/question2and8.css" />
-    <title>EBAY - Products</title>
+    <title>EBAY - Product Details</title>
   </head>
   <body>
     <!-- EBAY logo -->
@@ -48,8 +48,8 @@
           <br>
 
           <!-- Radio buttons to select which attribute to order the products by -->
-          <input type="radio" name="orderby" value="costperitem" checked="checked">   ORDER BY PRICE<br>
-          <input type="radio" name="orderby" value="description">   ORDER BY NAME<br>
+          <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
+          <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
           <br>
           <input id="submitStyle" type="submit" value = "Show Products">
         </form>
