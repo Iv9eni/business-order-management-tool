@@ -6,6 +6,11 @@
   margin-left: 68px;
 }
 
+#customers {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #customers div {
   background-color: #e1eaea;
   padding: 10px;
@@ -13,8 +18,6 @@
   float: left;
   height: auto;
   width: auto;
-
-  margin-left: auto;
 }
 
 #customers div:hover {
