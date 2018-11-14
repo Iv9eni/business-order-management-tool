@@ -15,10 +15,10 @@
   margin-bottom: 10px;
   padding: 5px 12px 5px 12px;
 
-  color: #FF7373;
+  color: #e33636;
 }
 
-.customerSelect select {
+.customerSelect option {
   color: black;
 }
 
@@ -30,14 +30,13 @@
 }
 
 #productButtons input[type="radio"] {
-  vertical-align: baseline;
-  padding: 10px;
-  margin: 10px;
+  padding: 4px 6px 4px 4px;
 }
 
 #qualityTxt {
   display: inline;
-  margin: 10px 0 0 0;
+  margin: 10px 0px 0px 0px;
+  vert
 }
 
 #subButton {
