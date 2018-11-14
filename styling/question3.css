@@ -10,6 +10,13 @@
   display: block;
 }
 
+#productButtons, #qualityTxt {
+  margin-left: 250px;
+  width: 200px;
+  height: 150px;
+  background-color: cyan;
+}
+
 #subButton {
   display: block;
 }
