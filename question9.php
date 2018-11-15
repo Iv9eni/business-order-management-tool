@@ -71,11 +71,11 @@
       </form>
 
       <ul id="summaryTable">
-        <li>Product ID: </li>
-        <li>Product Name: </li>
-        <li>Cost: </li>
-        <li>Total Sold: </li>
-        <li>Total Costs: </li>
+        <li><label for="id">Product ID:</label> </li>
+        <li><label for="id">Product Name:</label> </li>
+        <li><label for="id">Cost:</label> </li>
+        <li><label for="id">Total Sold:</label> </li>
+        <li><label for="id">Total Costs:</label> </li>
       </ul>
 
     </div>
