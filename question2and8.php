@@ -78,5 +78,9 @@
      </div>
    </div>
 
+   <div id="quantityAnalysisContainer">
+
+   </div>
+
   </body>
 </html>
