@@ -52,7 +52,10 @@
   width: 325px;
   height: auto;
 
-  list-style-type: none;
   background-color: #e1eaea;
   text-align: center;
+}
+
+#purchasedListContainer ul {
+  list-style-type: none;
 }
