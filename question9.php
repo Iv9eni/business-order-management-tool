@@ -95,9 +95,9 @@
       <ul id="summaryTable">
         <li><label for="id">Product ID:</label> <?php echo $productSelect; ?></li>
         <li><label for="name">Product Name:</label> <?php echo $product["Description"]; ?></li>
-        <li><label for="cost">Cost:</label> <?php echo $product["CostPerItem"]; ?></li>
+        <li><label for="cost">Cost Per Item: $</label> <?php echo $product["CostPerItem"]; ?></li>
         <li><label for="totalsold">Amount Sold:</label> <?php echo $totalSold["totalsold"]; ?></li>
-        <li><label for="totalcosts">Total Costs:</label> <?php echo $totalCost; ?></li>
+        <li><label for="totalcosts">Total Costs: $</label> <?php echo $totalCost; ?></li>
       </ul>
 
     </div>
