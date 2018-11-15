@@ -47,8 +47,12 @@
 }
 
 #purchasedListContainer {
-  text-align: center;
-  width: auto;
-  height: auto;
   margin: 20px auto auto auto;
+  padding: 15px;
+  width: 325px;
+  height: auto;
+
+  list-style-type: none;
+  background-color: #e1eaea;
+  text-align: center;
 }

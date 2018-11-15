@@ -60,9 +60,9 @@
     <!-- To group all the items purchased by the customer -->
     <div id="purchasedListContainer">
 
-      <p> Products Purchased: </p>
+      <p style="margin: 10px auto 10px auto"> Products Purchased: </p>
 
-      <ol>
+      <ul>
         <?php
           # Checks if the submit button was clicked
           if (isset($_POST["submit"])) {
@@ -90,7 +90,7 @@
             mysqli_free_result($result);
           }
         ?>
-      </ol>
+      </ul>
     </div>
 
   </body>
