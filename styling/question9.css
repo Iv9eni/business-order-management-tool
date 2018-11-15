@@ -33,3 +33,7 @@
   box-shadow: 0 0 10px #ababab inset;
   font-family: "Times New Roman";
 }
+
+#summaryTabel ul li {
+  margin-top: 5px;
+}
