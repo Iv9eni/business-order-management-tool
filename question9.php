@@ -12,7 +12,6 @@
 
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <link rel="stylesheet" type="text/css" href="styling/question9.css" />
-    <script src="scripts\displaySummary.js"></script>
 
     <title>EBAY - Order Summarys</title>
   </head>
