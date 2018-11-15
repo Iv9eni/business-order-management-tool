@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- EBAY logo -->
-    <img id="logo" src="images\logo.png">
+    <img id="logo" src="logo.png">
 
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
