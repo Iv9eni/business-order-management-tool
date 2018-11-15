@@ -54,7 +54,7 @@
         </div>
 
         <!-- Button for user to accept all values of search and search the products purchased by customer -->
-        <input type="submit" value="Show Purchased Products" id="submit"><br>
+        <input type="submit" name="submit" value="Show Purchased Products" id="submit"><br>
     </form>
 
     <h3 style="text-align: center;"> Products Purchased by Selected Customer: </h3>
