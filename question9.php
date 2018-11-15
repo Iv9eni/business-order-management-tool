@@ -53,7 +53,7 @@
 
             # Loops through all the rows in our query
             while ($product_row = mysqli_fetch_assoc($result)) {
-              echo '<option value=' . $product_row["ProdID"] . '>' . $row["Description"] . '</option>';
+              echo '<option value=' . $product_row["ProdID"] . '>' . $product_row["Description"] . '</option>';
             }
 
             # End of select statement
