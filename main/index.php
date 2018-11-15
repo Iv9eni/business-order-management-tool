@@ -19,14 +19,14 @@
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
 			<ul>
-				<li><a class="active" href="index.php">Home</a></li>
-				<li><a href="question1.php">View Customer Purchases</a></li>
-				<li><a href="question2and8.php">Products</a></li>
-				<li><a href="question3.php">Create Buy Order</a></li>
-				<li><a href="question4.php">Add Customer</a></li>
-				<li><a href="question5.php">Update Phone</a></li>
-        <li><a href="question6.php">Delete Customer</a></li>
-				<li><a href="question9.php">Order Summary</a></li>
+				<li><a class="active" href="main\index.php">Home</a></li>
+				<li><a href="main\question1.php">View Customer Purchases</a></li>
+				<li><a href="main\question2and8.php">Products</a></li>
+				<li><a href="main\question3.php">Create Buy Order</a></li>
+				<li><a href="main\question4.php">Add Customer</a></li>
+				<li><a href="main\question5.php">Update Phone</a></li>
+        <li><a href="main\question6.php">Delete Customer</a></li>
+				<li><a href="main\question9.php">Order Summary</a></li>
 			</ul>
 		</div>
 
