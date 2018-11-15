@@ -54,7 +54,7 @@
         </div>
 
         <!-- Button for user to accept all values of search and search the products purchased by customer -->
-        <input type="submit" name="submit" value="Show Purchased Products" id="submit"><br>
+        <input type="submit" name="submit" value="Show Purchased Products" id="submit"><br><hr><br>
     </form>
 
     <!-- To group all the items purchased by the customer -->
