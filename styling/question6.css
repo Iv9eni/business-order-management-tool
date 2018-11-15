@@ -1,0 +1,25 @@
+#wrapper {
+  display: block;
+  margin: 20px auto auto auto;
+  padding: 15px 20px 30px 20px;
+  width: 43%;
+  height: auto;
+
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#container {
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+#container select {
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+}
+#container input[type="submit"] {
+  padding: 5px 8px 5px 8px;
+  margin: 10px 0px 10px 0px;
+}
