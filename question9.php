@@ -72,18 +72,32 @@
       <?php
          # Checks if the submit button was clicked
          if (isset($_POST["submit"])) {
-           # Stores the productID chosen by user
+
+           # Stores the productID chosen by user and sums the quantitys bought of products
            $productSelect = $_POST["products"];
-           echo $productSelect;
+
+           # Gets the total amount of product purchased
+           $queryTotal = 'SELECT SUM(quantity) AS totalsold FROM productsold WHERE productid=' . $productSelect . ' GROUP BY productid';
+           $totalResult = mysqli_query($connection, $queryTotal);
+           $totalSold = mysqli_fetch_assoc($totalResult);
+
+           # Gets the information on the product selected
+           $productQueryTxt = 'SELECT * FROM product WHERE prodid=' . $productSelect;
+           $productQuery = mysqli_query($connection, $productQueryTxt);
+           $product = mysqli_fetch_assoc($productQuery);
+
+           # Calculates the total cost of products purchased
+           $totalCost = $product["CostPerItem"] * $totalSold["totalsold"];
+
          }
       ?>
 
       <ul id="summaryTable">
-        <li><label for="id">Product ID:</label> </li>
-        <li><label for="name">Product Name:</label> </li>
-        <li><label for="cost">Cost:</label> </li>
-        <li><label for="totalsold">Total Sold:</label> </li>
-        <li><label for="totalcosts">Total Costs:</label> </li>
+        <li><label for="id">Product ID:</label> <?php echo $productSelect; ?></li>
+        <li><label for="name">Product Name:</label> <?php echo $product["Description"]; ?></li>
+        <li><label for="cost">Cost:</label> <?php echo $product["CostPerItem"]; ?></li>
+        <li><label for="totalsold">Amount Sold:</label> <?php echo $totalSold["totalsold"]; ?></li>
+        <li><label for="totalcosts">Total Costs:</label> <?php echo $totalCost; ?></li>
       </ul>
 
     </div>
