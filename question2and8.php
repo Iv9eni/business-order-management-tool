@@ -78,8 +78,9 @@
      </div>
    </div>
 
+   <!-- Beginning of 7) Asking user to prompt for a quantity which a product sales exceed -->
    <div id="quantityAnalysisContainer">
-
+     <input type="text" name="quantity" placeholder="Quantity..">
    </div>
 
   </body>

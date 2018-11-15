@@ -39,7 +39,7 @@
     <div id="wrapper">
       <!-- Start of 3) -->
   		<!-- To purchase a product for a customer -->
-  		<form action="insertpurchase.php" method="post">
+  		<form action="#" method="post">
   			<?php
   				# To display available customers to update
   				include 'getcustomerdata.php';
@@ -62,9 +62,7 @@
           # End of select statement
   			  echo '</select>';
 
-          echo '<br>';
-
-
+          # Start of the product choosing section
           echo '<p style="margin-bottom: 30px; margin-top: 30px;"> PRODUCTS </p>';
 
           # Putting all the radio buttons into an unordered list
@@ -80,6 +78,27 @@
   			<input type="text" name="quantity" placeholder="Quantity" id="quantityTxt" size="15">
   			<br><input type="submit" value="Insert Product Purchase" id="subButton">
   		</form>
+
+      <?php
+        # Initializes variables to store the purchasers id and the products id that they are purchasing
+        $whichCustomer = $_POST["customer"];
+        $whichProduct = $_POST["product"];
+        $quantity = $_POST["quantity"];
+
+        # Query to insert purchase order into values
+        $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichProduct . ', ' . intval($quantity) . ')';
+
+        # Checks if the query failed and outputs message if it does, otherwise adds row to database
+        if ( !mysqli_query($connection, $query) ) {
+          die('Error: Insertion Failed: ' . mysqli_error($connection));
+        }
+
+        # Welcome
+        echo 'Product purchased!';
+
+        # Closes database
+        mysqli_close($connection);
+      ?>
     </div>
   </body>
 </html>

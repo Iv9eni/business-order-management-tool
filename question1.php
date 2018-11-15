@@ -64,6 +64,7 @@
       <p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED </p>
       <hr>
 
+      <!-- Unordered list to hold all the products purchased by user -->
       <ul>
         <?php
           # Checks if the submit button was clicked
