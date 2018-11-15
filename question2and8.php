@@ -73,7 +73,7 @@
             echo '<li>' . $row["Description"] . '</li>';
           }
           # Ends the unordered list
-          echo '</ul>';
+          echo '</ul><br><hr>';
          ?>
      </div>
    </div>
