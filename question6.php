@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+  	<link rel="stylesheet" type="text/css" href="styling/question6.css" />
     <title>EBAY - Delete Customer</title>
   </head>
   <body>
