@@ -60,7 +60,7 @@
     <!-- To group all the items purchased by the customer -->
     <div id="purchasedListContainer">
 
-      <h3> Products Purchased by Selected Customer: </h3>
+      <p> Products Purchased: </p>
 
       <ol>
         <?php
