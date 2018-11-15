@@ -48,16 +48,21 @@
           <!-- Start of creating products as options for dropdown -->
           <?php
             # Query's to find the products you can select from
-            $findProductsQuery = 'SELECT * FROM products';
+            $findProductsQuery = 'SELECT * FROM product';
             $result = mysqli_query($connection, $findProductsQuery);
 
             # Loops through all the rows in our query
             while ($product_row = mysqli_fetch_assoc($result)) {
               echo '<option value=' . $product_row["ProdID"] . '>' . $row["Description"] . '</option>';
             }
+
+            # End of select statement
+            echo '</select>';
            ?>
 
       </form>
+
+
 
     </div>
 
