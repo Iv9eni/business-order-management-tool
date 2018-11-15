@@ -1,18 +1,12 @@
 #wrapper {
   display: block;
-  margin: 20px auto auto auto;
+  margin: 20px 0px auto 0px;
   padding: 15px 20px 30px 20px;
-  width: 43%;
+  width: 8%;
   height: auto;
 
   background-color: #f2f2f2;
   text-align: center;
-}
-
-#container {
-  width: 400px;
-  height: auto;
-  margin: auto;
 }
 
 #container select {
