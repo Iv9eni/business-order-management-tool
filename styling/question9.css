@@ -22,11 +22,11 @@
 }
 
 #summaryTable {
-  display: block;
+  display: inline-block;
   text-align: initial;
   width: auto;
   height: auto;
-  padding: 15px;
+  padding: 15px 30px 15px 30px;
 
   list-style-type: none;
   background-color: white;
