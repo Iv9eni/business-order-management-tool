@@ -90,7 +90,8 @@
          }
       ?>
 
-      <h3> Order Summary </h3>
+      <h3 style="margin-top: 30px"> Order Summary </h3>
+
       <!-- Creates an unordered list of the order summary -->
       <ul id="summaryTable">
         <li><label>Product ID:</label> <b><?php echo $productSelect; ?></b></li>
