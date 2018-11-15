@@ -88,16 +88,17 @@
 
            # Calculates the total cost of products purchased
            $totalCost = $product["CostPerItem"] * $totalSold["totalsold"];
-
          }
       ?>
 
+      <h3> Order Summary </h3>
+      <!-- Creates an unordered list of the order summary -->
       <ul id="summaryTable">
-        <li><label for="id">Product ID:</label> <?php echo $productSelect; ?></li>
-        <li><label for="name">Product Name:</label> <?php echo $product["Description"]; ?></li>
-        <li><label for="cost">Cost Per Item: $</label> <?php echo $product["CostPerItem"]; ?></li>
-        <li><label for="totalsold">Amount Sold:</label> <?php echo $totalSold["totalsold"]; ?></li>
-        <li><label for="totalcosts">Total Costs: $</label> <?php echo $totalCost; ?></li>
+        <li><label>Product ID:</label> <b><?php echo $productSelect; ?></b></li>
+        <li><label>Product Name:</label> <b><?php echo $product["Description"]; ?></b></li>
+        <li><label>Cost Per Item: $</label> <b><?php echo $product["CostPerItem"]; ?></b></li>
+        <li><label>Amount Sold:</label> <b><?php echo $totalSold["totalsold"]; ?></b></li>
+        <li><label>Total Costs: $</label> <b><?php echo $totalCost; ?></b></li>
       </ul>
 
     </div>
