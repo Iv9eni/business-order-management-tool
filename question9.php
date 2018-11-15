@@ -43,10 +43,10 @@
     <div id="wrapper">
 
       <!-- Gives user instructions on what the functionality of this page is -->
-      <p style='font-family: "Courier";'> Select a product to display total money made in sales </p>
+      <p style='font-family: "Courier";'> PRODUCTS </p>
 
       <!-- Selecting a product to see its order summary -->
-      <form action="calculateOrderSummary" method="post">
+      <form action="form.php" method="">
 
         <!-- Select statement to display the different products -->
         <select name="products">
@@ -59,7 +59,7 @@
 
             # Loops through all the rows in our query
             while ($product_row = mysqli_fetch_assoc($result)) {
-              echo '<option value=' . $product_row["ProdID"] . '><b>' . $product_row["ProdID"] . '</b>: ' . $product_row["Description"] . '</option>';
+              echo '<option value=' . $product_row["ProdID"] . '>' . $product_row["ProdID"] . ': ' . $product_row["Description"] . '</option>';
             }
 
             # End of select statement
