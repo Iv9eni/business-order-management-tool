@@ -8,3 +8,9 @@
   background-color: #f2f2f2;
   text-align: center;
 }
+
+#summaryText {
+  width:auto;
+  height:auto;
+  padding: 5px;
+}

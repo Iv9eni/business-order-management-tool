@@ -9,9 +9,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <link rel="stylesheet" type="text/css" href="styling/question9.css" />
-    <title>EBAY - Delete Customer</title>
+    <script src="scripts\displaySummary.js"></script>
+
+    <title>EBAY - Order Summarys</title>
   </head>
   <body>
     <!-- EBAY logo -->
@@ -39,6 +42,9 @@
     <!-- Wrap the contents of the HTML file for styling -->
     <div id="wrapper">
 
+      <!-- Gives user instructions on what the functionality of this page is -->
+      <p style='font-family: "Courier";'> Select a product to display total money made in sales </p>
+
       <!-- Selecting a product to see its order summary -->
       <form action="calculateOrderSummary" method="post">
 
@@ -53,7 +59,7 @@
 
             # Loops through all the rows in our query
             while ($product_row = mysqli_fetch_assoc($result)) {
-              echo '<option value=' . $product_row["ProdID"] . '>' . $product_row["Description"] . '</option>';
+              echo '<option value=' . $product_row["ProdID"] . '><b>' . $product_row["ProdID"] . '</b>: ' . $product_row["Description"] . '</option>';
             }
 
             # End of select statement
@@ -62,6 +68,7 @@
 
       </form>
 
+      <p id="summaryText">Product ID: <br>Product Name: <br>Cost: <br>Total Quantity Purchased: <br>Total Costs: </p>
 
 
     </div>
