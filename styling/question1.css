@@ -45,3 +45,10 @@
   margin-top: 15px;
   display: block;
 }
+
+#purchasedListContainer {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
