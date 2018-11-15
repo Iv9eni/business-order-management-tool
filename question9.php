@@ -66,12 +66,18 @@
             echo '</select>';
            ?>
 
-         <input type="submit" value="Get Statement">  
+         <input type="submit" value="Get Statement">
 
       </form>
 
-      <p id="summaryText">Product ID: <br>Product Name: <br>Cost: <br>Total Quantity Purchased: <br>Total Costs: </p>
-
+      <p id="summaryText"><br>Total Quantity Purchased: <br>Total Costs: </p>
+      <ul id="summaryTable">
+        <li>Product ID: </li>
+        <li>Product Name: </li>
+        <li>Cost: </li>
+        <li>Total Sold: </li>
+        <li>Total Costs: </li>
+      </ul>
 
     </div>
 
