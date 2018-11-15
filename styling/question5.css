@@ -10,8 +10,9 @@
 }
 
 #updateNumberContainer {
-  width: auto;
+  width: 400px;
   height: auto;
+  margin: auto;
 }
 
 #updateNumberContainer select {
