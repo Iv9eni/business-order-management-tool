@@ -70,7 +70,6 @@
 
       </form>
 
-      <p id="summaryText"><br>Total Quantity Purchased: <br>Total Costs: </p>
       <ul id="summaryTable">
         <li>Product ID: </li>
         <li>Product Name: </li>
