@@ -18,6 +18,10 @@ body {
   opacity: 0.8;
 }
 
+#navigationBar {
+  display: block;
+}
+
 #navigationBar ul {
     list-style-type: none;
     margin: 10px auto auto auto;

@@ -35,7 +35,8 @@
     <?php
       include 'connectdb.php';
     ?>
-    <div id="updatetools">
+    <div id="wrapper">
+      <div id="updateNumberContainer">
       <!-- Start of 5) Updating a customers phone number -->
       <!-- Changes a current customers phone number -->
       <form action="updatephonenumber.php" method="post">
