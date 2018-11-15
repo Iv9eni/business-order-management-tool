@@ -46,7 +46,7 @@
       <p style='font-family: "Courier";'> PRODUCTS </p>
 
       <!-- Selecting a product to see its order summary -->
-      <form action="form.php" method="">
+      <form action="#" method="post">
 
         <!-- Select statement to display the different products -->
         <select name="products">
@@ -64,18 +64,26 @@
 
             # End of select statement
             echo '</select>';
-           ?>
+         ?>
 
-         <input type="submit" value="Get Statement">
-
+         <input type="submit" name="submit" value="Get Statement">
       </form>
+
+      <?php
+         # Checks if the submit button was clicked
+         if (isset($_POST["submit"])) {
+           # Stores the productID chosen by user
+           $productSelect = $_POST["products"];
+           echo $productSelect;
+         }
+      ?>
 
       <ul id="summaryTable">
         <li><label for="id">Product ID:</label> </li>
-        <li><label for="id">Product Name:</label> </li>
-        <li><label for="id">Cost:</label> </li>
-        <li><label for="id">Total Sold:</label> </li>
-        <li><label for="id">Total Costs:</label> </li>
+        <li><label for="name">Product Name:</label> </li>
+        <li><label for="cost">Cost:</label> </li>
+        <li><label for="totalsold">Total Sold:</label> </li>
+        <li><label for="totalcosts">Total Costs:</label> </li>
       </ul>
 
     </div>
