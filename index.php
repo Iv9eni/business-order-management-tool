@@ -19,7 +19,7 @@
 		<!-- Allows navigation through website -->
 		<div id="navigationBar">
 			<ul>
-				<li><a class="active" href="main\index.php">Home</a></li>
+				<li><a class="active" href="index.php">Home</a></li>
 				<li><a href="main\question1.php">View Customer Purchases</a></li>
 				<li><a href="main\question2and8.php">Products</a></li>
 				<li><a href="main\question3.php">Create Buy Order</a></li>
