@@ -90,7 +90,7 @@
          }
       ?>
 
-      <h3 style="margin-top: 30px"> Order Summary </h3>
+      <p style="margin-top: 30px; font-family=Courier;"> Order Summary </p>
 
       <!-- Creates an unordered list of the order summary -->
       <ul id="summaryTable">
