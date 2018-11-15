@@ -11,6 +11,14 @@
 
 #wrapper select {
   display: block;
+  padding: 4px 8px 4px 8px;
+  margin: auto;
+}
+
+#wrapper input[type="submit"] {
+  display: block;
+  padding: 8px;
+  margin: 10px auto auto auto;
 }
 
 #summaryTable {
