@@ -20,7 +20,11 @@
 
 label {
   display: table;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+#tableContainer input[type="text"] {
+    padding: 5px 20px 5px 20px;
 }
 
 #submission {
