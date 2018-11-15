@@ -66,6 +66,8 @@
             echo '</select>';
            ?>
 
+         <input type="submit" value="Get Statement">  
+
       </form>
 
       <p id="summaryText">Product ID: <br>Product Name: <br>Cost: <br>Total Quantity Purchased: <br>Total Costs: </p>
