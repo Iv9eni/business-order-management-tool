@@ -10,6 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
+    <link rel="stylesheet" type="text/css" href="styling/question9.css" />
     <title>EBAY - Delete Customer</title>
   </head>
   <body>
@@ -35,8 +36,30 @@
       include 'connectdb.php';
     ?>
 
-    <form action="calculateOrderSummary" method="post">
-    </form>
+    <!-- Wrap the contents of the HTML file for styling -->
+    <div id="wrapper">
+
+      <!-- Selecting a product to see its order summary -->
+      <form action="calculateOrderSummary" method="post">
+
+        <!-- Select statement to display the different products -->
+        <select name="products">
+
+          <!-- Start of creating products as options for dropdown -->
+          <?php
+            # Query's to find the products you can select from
+            $findProductsQuery = 'SELECT * FROM products';
+            $result = mysqli_query($connection, $findProductsQuery);
+
+            # Loops through all the rows in our query
+            while ($product_row = mysqli_fetch_assoc($result)) {
+              echo '<option value=' . $product_row["ProdID"] . '>' . $row["Description"] . '</option>';
+            }
+           ?>
+
+      </form>
+
+    </div>
 
   </body>
 </html>
