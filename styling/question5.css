@@ -12,5 +12,19 @@
 #updateNumberContainer {
   width: auto;
   height: auto;
-  margin: auto;
+}
+
+#updateNumberContainer select {
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+#updateNumberContainer input[type="text"] {
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+#updateNumberContainer input[type="submit"] {
+  padding: 5px 8px 5px 8px;
+  margin: 10px 0px 10px 0px;
 }

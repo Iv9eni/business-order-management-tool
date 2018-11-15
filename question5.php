@@ -53,7 +53,7 @@
             echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] . ' - ' . $row["PhoneNumber"]  . '</option>';
           }
 
-          echo '</select><br>';
+          echo '</select>';
         ?>
 
         <!-- Submits the change in phone number -->
