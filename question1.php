@@ -60,12 +60,6 @@
     <!-- To group all the items purchased by the customer -->
     <div id="purchasedListContainer">
 
-      <!-- Writes to user what this box is about -->
-      <p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED </p>
-      <hr>
-
-      <!-- Unordered list to hold all the products purchased by user -->
-      <ul>
         <?php
           # Checks if the submit button was clicked
           if (isset($_POST["submit"])) {
@@ -86,14 +80,22 @@
               die("Query To Find Customers Purchased Products Failed!");
             }
 
+            # Writes to user what this box is about
+            echo '<p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED: <b>' . $selectedID '</b></p><hr>';
+
+            # Unordered list to hold all the products purchased by user
+            echo '<ul>';
+
             # Loops through each row in the query
             while ($row = mysqli_fetch_assoc($result)) {
               echo '<li style="padding: 5px">' . $row["description"] . '</li>';
             }
             mysqli_free_result($result);
+
+            # Ends the unordered list
+            echo '</ul>';
           }
         ?>
-      </ul>
     </div>
 
   </body>
