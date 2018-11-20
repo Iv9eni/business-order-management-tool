@@ -65,7 +65,7 @@
           if (isset($_POST["submit"])) {
             # Initializes the variable with the customer id that was selected in the index page and runs a query to find their purchased products
             $selectedID = (string)$_POST["customers"];
-            $query = 'SELECT fname, description FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE customerid="' . $selectedID . '" ORDER BY description ' . $_POST["order"];
+            $query = 'SELECT fname, description, quantity FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE customerid="' . $selectedID . '" ORDER BY description ' . $_POST["order"];
 
             # Checks if the user selected a value
             if ($selectedID == NULL) {
@@ -81,14 +81,14 @@
             }
 
             # Writes to user what this box is about
-            echo '<p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED: ID<b>' . $selectedID . '</b></p><hr>';
+            echo '<p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED: <b>' . mysqli_fetch_assoc($result)["fname"] . '</b></p><hr>';
 
             # Unordered list to hold all the products purchased by user
             echo '<ul>';
 
             # Loops through each row in the query
             while ($row = mysqli_fetch_assoc($result)) {
-              echo '<li style="padding: 5px">' . $row["description"] . '</li>';
+              echo '<li style="padding: 5px">' . $row["description"] . ' Q: ' . $row["quantity"] . '</li>';
             }
             mysqli_free_result($result);
 
