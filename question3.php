@@ -88,7 +88,7 @@
           $quantity = $_POST["quantity"];
 
           # Query to insert purchase order into values
-          $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . $quantity . ')';
+          $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . intval($quantity) . ')';
 
           # Checks if the query failed and outputs message if it does, otherwise adds row to database
           if ( !mysqli_query($connection, $query) ) {
