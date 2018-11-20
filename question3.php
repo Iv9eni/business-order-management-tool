@@ -84,11 +84,11 @@
         if (isset($_POST["submit"])) {
           # Initializes variables to store the purchasers id and the products id that they are purchasing
           $whichCustomer = $_POST["customer"];
-          $whichProduct = $_POST["product"];
+          $whichProduct = $_POST["productsid"];
           $quantity = $_POST["quantity"];
 
           # Query to insert purchase order into values
-          $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichProduct . ', ' . $quantity . ')';
+          $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . intval($quantity) . ')';
 
           # Checks if the query failed and outputs message if it does, otherwise adds row to database
           if ( !mysqli_query($connection, $query) ) {
