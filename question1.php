@@ -81,7 +81,7 @@
             }
 
             # Writes to user what this box is about
-            echo '<p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED: <b>' . $selectedID . '</b></p><hr>';
+            echo '<p style="margin: 10px auto 10px auto"> PRODUCTS PURCHASED: ID<b>' . $selectedID . '</b></p><hr>';
 
             # Unordered list to hold all the products purchased by user
             echo '<ul>';

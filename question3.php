@@ -80,6 +80,7 @@
   		</form>
 
       <?php
+        # Checks if the user submitted the product for purchasing
         if (isset($_POST["submit"])) {
           # Initializes variables to store the purchasers id and the products id that they are purchasing
           $whichCustomer = $_POST["customer"];
@@ -95,7 +96,7 @@
           }
 
           # Welcome
-          echo 'Product purchased!';
+          echo '<script type="text/javascript">alert("Producted Purchased");</script>';
 
           # Closes database
           mysqli_close($connection);
