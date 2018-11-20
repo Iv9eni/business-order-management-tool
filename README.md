@@ -32,7 +32,7 @@ Using the database you created for assignment 2, JavaScript, CSS, HTML, PHP and 
 
 8-List the description of any product that has never been purchased X
 
-9-List the total number of purchases for a particular product and the product description and the total money made in sales for that product (cost * quantity). Prompt the user for the product id (Note: display an error message if the the product does not exist - or create the GUI in a way that the user cant pick a product that doesnt exist)
+9-List the total number of purchases for a particular product and the product description and the total money made in sales for that product (cost * quantity). Prompt the user for the product id (Note: display an error message if the the product does not exist - or create the GUI in a way that the user cant pick a product that doesnt exist) X
 
 10-Bonus (worth 2%): add an extra field to the customer's table called cusimage (you can do this right in mysql, not using php code, make it char(100)). Allow the user to click on one of the customers and if this field is null then let the user find an image online and add the url to the officials table AND display the image in your user interface. If the field is not null, display the image at the url..
 It is a good habit to disconnect from a database once you have finished using it, make sure you program disconnects from the database.
