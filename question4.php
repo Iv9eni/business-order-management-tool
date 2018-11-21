@@ -88,11 +88,17 @@
 
           <!-- Button to submit details and create new customer -->
           <input type="submit" value="Add New Customer" id="submission">
+          <hr>
       </form>
 
       <!-- Start of 6) Deleting a customer -->
       <!-- Deletes a customer -->
       <div id="deleteContainer">
+
+        <!-- Lets admin know about what this form does -->
+        <p> Delete Customer </p>
+
+        <!-- Form to delete customer -->
         <form action="#" method="post">
           <!-- To show the customers -->
           <?php
@@ -100,7 +106,7 @@
             include 'getcustomerdata.php';
 
             # Starts a selection operation to pick from a list of customers
-            echo '<select name="deleteCustomer" style="padding: 15px;">';
+            echo '<select name="deleteCustomer" style="margin-bottom: 15px; margin-right: 90px;">';
 
             # Loops through list of customers and makes them options of our selection
             while ($row = mysqli_fetch_assoc($c_result)) {
