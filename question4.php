@@ -84,6 +84,10 @@
               echo '<option value=' . $row["AgentID"] . '>' . $row["FirstName"] . ' ' . $row["LastName"] . '</option>';
             }
           ?>
+
+          <tr><td><label for="displayPic">Display Picture:</label> <!-- DISPLAY PICTURE -->
+            <td><input type="file" name="displayPic" id="displayPic"><br>
+
           </table>
 
           <!-- Button to submit details and create new customer -->
