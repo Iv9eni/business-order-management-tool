@@ -85,11 +85,50 @@
            products with quantitys sold greater than number submitted <br>
            will be shown as well</p>
 
-       <!-- Textbox to enter quantity for products to match -->
-       <input type="text" id="quantityTxt" name="quantity" placeholder="Quantity..">
+       <form action="#" post="">
 
-       <!-- Submits answer and displays user the quantitys -->
-       <input type="submit" name="submitQuantity"
+         <!-- Textbox to enter quantity for products to match -->
+         <input type="text" id="quantityTxt" name="quantity" placeholder="Quantity..">
+
+         <!-- Submits answer and displays user the quantitys -->
+         <input type="submit" name="submitQuantity">
+
+         <?php
+          # Checks if the user presses submit for this stage
+          if (isset($_POST["submitQuantity"])) {
+
+            # Stores the quantity in variables for query searching
+            $quantityTxt = $_POST["quantity"];
+            $quantity = intval($quantityTxt);
+
+            # Runs a query to find all the products and customers
+            $search_query = 'SELECT fname, lname, description, quantity FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE quantity>=' . $quantity;
+            $result = mysqli_query($connection, $search_query)
+
+            # Checks if the query was successful
+            if ($result) {
+
+              # Starts an unordered list
+              echo '<ul>';
+
+              # Loops through all the rows in query
+              while ($row = mysqli_fetch_assoc($result))
+              {
+                # Creates element of unordered list where it shows the customer full name, product they purchased, and the quantity the purchased
+                echo '<li>' . $row["FName"] . ' ' . $row["LName"] . ' Purchased ' . $row["Description"] . ' In Amount: ' . $row["Quantity"];
+              }
+
+              # Ends the unordered list
+              echo '</ul>';
+            }
+            else {
+              # Displays error message
+              die("Query failed");
+            }
+
+          }
+         ?>
+      </form>
      </div>
    </div>
 
