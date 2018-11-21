@@ -42,3 +42,8 @@ ul {
 li {
   margin-bottom: 8px;
 }
+
+#quantityTxt {
+  margin-top: 10px;
+  padding: 10px;
+}
