@@ -101,7 +101,7 @@
             $newQuantity = $quantity + $quantityPurchased;
 
             # Query to insert purchase order into values
-            $insert_queryStr = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . $newQuantity . ')';
+            $insert_queryStr = 'UPDATE productsold SET quantity=' . $newQuantity . ' WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct; 
           }
           else {
             # Query to insert purchase order into values
