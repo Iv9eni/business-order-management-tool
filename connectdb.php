@@ -14,7 +14,7 @@
 
 	# Stores the MYSQL database in connection to run querys, store/modify data,  etc..
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-	
+
 	# Checks if connection to the SQL database was successful
 	if (mysqli_connect_errno()) {
 		die("Database connection failed :" . mysqli_connect_error() . "(" . mysqli_connect_errno() . ")" );
