@@ -81,10 +81,12 @@
      <div id="quantityAnalysisContainer">
 
        <!-- Instructs user on what this text box does -->
-       <p> enter quantity a product must have sold in order to display </p>
+       <p> enter quantity a product must have sold in order to display<br>
+           products with quantitys sold greater than number submitted <br>
+           will be shown as well</p>
 
        <!-- Textbox to enter quantity for products to match -->
-       <input type="text" name="quantity" placeholder="Quantity..">
+       <input type="text" id="quantityTxt" name="quantity" placeholder="Quantity..">
 
        <!-- Submits answer and displays user the quantitys -->
        <input type="submit" name="submitQuantity"
