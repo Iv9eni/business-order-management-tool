@@ -91,6 +91,31 @@
           <input type="submit" value="Add New Customer" id="submission">
       </form>
 
+      <!-- Start of 6) Deleting a customer -->
+      <!-- Deletes a customer -->
+      <div id="deleteContainer">
+        <form action="deletecustomer.php" method="post">
+          <!-- To show the customers -->
+          <?php
+            # Gets customer data to print selection
+            include 'getcustomerdata.php';
+
+            # Starts a selection operation to pick from a list of customers
+            echo '<select name="customer">';
+
+            # Loops through list of customers and makes them options of our selection
+            while ($row = mysqli_fetch_assoc($c_result)) {
+              echo '<option value=' . $row["CustomerID"] . '>' . $row["FName"] . ' ' . $row["LName"] .  '</option>';
+            }
+
+            echo '</select><br>';
+          ?>
+
+          <!-- Submits the change in phone number -->
+          <input type="submit" value="Delete Customer">
+
+        </form>
+
     </div>
 
   </body>
