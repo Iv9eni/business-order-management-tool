@@ -167,9 +167,6 @@
               die("Query to delete customer failed: " . mysqli_error($connection));
             }
           }
-
-          # Closes connection to database
-          mysqli_close($connection);
         ?>
     </div>
   </body>
