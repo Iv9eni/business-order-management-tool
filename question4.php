@@ -95,9 +95,6 @@
       <!-- Deletes a customer -->
       <div id="deleteContainer">
 
-        <!-- Lets admin know about what this form does -->
-        <p> Delete Customer </p>
-
         <!-- Form to delete customer -->
         <form action="#" method="post">
           <!-- To show the customers -->
