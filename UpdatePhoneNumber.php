@@ -70,7 +70,7 @@
 
           # Querys to SQL and checks if the query is successful
           if (mysqli_query($connection, $update_query)) {
-            echo 'Record successfully updated';
+            echo 'Phone Number Updated';
           }
           # If query unsuccessful run this
           else {
