@@ -32,8 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-    # Stores the MYSQL database in connection to run querys, store/modify data,  etc..
-    $connection = mysqli_connect("localhost", "root", "cs3319", "idarinskassign2db");
+      include 'functionalPHP/connectdb.php';
     ?>
 
     <div id="wrapper">
