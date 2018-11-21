@@ -91,7 +91,7 @@
           # Query to see if the product has been Purchased
           $search_query = 'SELECT COUNT(*) as ProductExist, Quantity FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
           $check_product_status = mysqli_query($connection, $search_query);
-          $searchRow = mysqli_fetch_assoc($check_product_status)
+          $searchRow = mysqli_fetch_assoc($check_product_status);
 
           # Checks if the customer already purchased the product
           if ($searchRow["ProductExist"] == 1) {
