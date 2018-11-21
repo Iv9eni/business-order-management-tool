@@ -6,7 +6,7 @@
 -->
   <!-- Connects database -->
   <?php
-    include 'functionalPHP\connectdb.php';
+    include 'connectdb.php';
   ?>
 
   <?php
