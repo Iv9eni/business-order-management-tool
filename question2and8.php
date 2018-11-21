@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
 		<link rel="stylesheet" type="text/css" href="styling/question2and8.css" />
-    <title>EBAY - Product Details</title>
+    <title>EBAY - Products</title>
   </head>
   <body>
     <!-- EBAY logo -->

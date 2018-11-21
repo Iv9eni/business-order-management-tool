@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <link rel="stylesheet" type="text/css" href="styling/question4.css" />
-    <title>EBAY - Insert New Customer</title>
+    <title>EBAY - Add/Remove Customers</title>
   </head>
   <body>
     <!-- EBAY logo -->
