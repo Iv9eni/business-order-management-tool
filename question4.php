@@ -111,7 +111,7 @@
           ?>
 
           <!-- Submits the change in phone number -->
-          <input type="submit" name="delete" value="Delete Customer">
+          <input type="submit" name="delete" value="Delete Customer" style="  width: 220px; height: 35px;">
 
         </form>
 
@@ -134,6 +134,5 @@
           }
         ?>
     </div>
-
   </body>
 </html>
