@@ -47,6 +47,10 @@ li {
     margin-top: 10px;
 }
 
+#quantityAnalysisContainer input[type="submit"]{
+    padding: 10px;
+}
+
 #quantityAnalysisContainer p {
     background-color: #dadade;
     padding: 5px;
