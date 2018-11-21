@@ -87,11 +87,14 @@
           $whichProduct = $_POST["productsid"];
           $quantity = $_POST["quantity"];
 
+          # Query to see if the product has been Purchased
+          $search_query = 'SELECT * FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct; 
+
           # Query to insert purchase order into values
-          $query = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . intval($quantity) . ')';
+          $insert_queryStr = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . intval($quantity) . ')';
 
           # Checks if the query failed and outputs message if it does, otherwise adds row to database
-          if ( !mysqli_query($connection, $query) ) {
+          if ( !mysqli_query($connection, $insert_queryStr) ) {
             die('Error: Insertion Failed: ' . mysqli_error($connection));
           }
 

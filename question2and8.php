@@ -76,19 +76,19 @@
           echo '</ul><br><hr>';
          ?>
      </div>
-   </div>
 
-   <!-- Beginning of 7) Asking user to prompt for a quantity which a product sales exceed -->
-   <div id="quantityAnalysisContainer">
+     <!-- Beginning of 7) Asking user to prompt for a quantity which a product sales exceed -->
+     <div id="quantityAnalysisContainer">
 
-     <!-- Instructs user on what this text box does -->
-     <p> enter quantity a product must have sold in order to display </p>
+       <!-- Instructs user on what this text box does -->
+       <p> enter quantity a product must have sold in order to display </p>
 
-     <!-- Textbox to enter quantity for products to match -->
-     <input type="text" name="quantity" placeholder="Quantity..">
+       <!-- Textbox to enter quantity for products to match -->
+       <input type="text" name="quantity" placeholder="Quantity..">
 
-     <!-- Submits answer and displays user the quantitys -->
-     <input type="submit" name="submitQuantity"
+       <!-- Submits answer and displays user the quantitys -->
+       <input type="submit" name="submitQuantity"
+     </div>
    </div>
 
   </body>
