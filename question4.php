@@ -38,7 +38,7 @@
     <div id="wrapper">
 
       <!-- START OF 4) Inserting a new customer -->
-      <form action="insertcustomer.php" method="post">
+      <form action="#" method="post">
 
           <!-- Table to neatly organize the textboxes and labels for them -->
           <table id="tableContainer">
@@ -87,9 +87,39 @@
           </table>
 
           <!-- Button to submit details and create new customer -->
-          <input type="submit" value="Add New Customer" id="submission">
+          <input type="submit" name="insertCustomer" value="Add New Customer" id="submission">
           <hr>
       </form>
+
+      <!-- PHP to insert new customer -->
+      <?php
+        # Checks if the user submitted a new customer
+        if (isset($_POST["insertCustomer"])) {
+          # Finds a new customerID and initializes it
+          include 'findcustomerid.php';
+          $customerID = $newID;
+
+          # Variables initializing all new customer attributes
+          $customerFName = $_POST["firstName"];
+          $customerLName = $_POST["lastName"];
+          $customerAddress = $_POST["address"];
+          $customerPhone = $_POST["pNumber"];
+          $customerAgent = $_POST["agent"];
+
+          # Query to insert into customer table
+          $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',"' . $customerFName . '","' . $customerLName . '","' . $customerAddress . '","' . $customerPhone . '")';
+          $insert_result = mysqli_query($connection, $query);
+
+          # Checks if the query was successful
+          if ( !$insert_result ) {
+            die("Query to insert customer failed: " . mysqli_error($connection));
+          }
+
+          # Displays to user that they have added a new customer
+          echo '<script type="text/javascript">alert("Customer Added!");</script>';
+        }
+
+      ?>
 
       <!-- Start of 6) Deleting a customer -->
       <!-- Deletes a customer -->
