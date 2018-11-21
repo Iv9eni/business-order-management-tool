@@ -69,7 +69,7 @@
         		}
 
             # Creates an ordered list of products
-            echo '<ol>';
+            echo '<ol style="margin-bottom: 15px;">';
 
         		# Loops through each row in the query
         		while ($row = mysqli_fetch_assoc($result)) {
