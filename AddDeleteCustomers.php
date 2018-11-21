@@ -126,11 +126,8 @@
                              move_uploaded_file($_FILES["displayPic"]["tmp_name"],"images/" . $_FILES["displayPic"]["name"]);
                              $cusImage = "images/" . $_FILES["displayPic"]["name"];
                 }
-
               }
             }
-
-
 
           # Finds a new customerID and initializes it
           include 'findcustomerid.php';
@@ -144,7 +141,7 @@
           $customerAgent = $_POST["agent"];
 
           # Query to insert into customer table
-          $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',"' . $customerFName . '","' . $customerLName . '","' . $customerAddress . '","' . $customerPhone . '")';
+          $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',"' . $customerFName . '","' . $customerLName . '","' . $customerAddress . '","' . $customerPhone . ', "' . $cusImage . '")';
           $insert_result = mysqli_query($connection, $query);
 
           # Checks if the query was successful
