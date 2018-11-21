@@ -99,6 +99,9 @@
       <?php
         # Checks if the user submitted a new customer
         if (isset($_POST["insertCustomer"])) {
+          
+
+
           # Finds a new customerID and initializes it
           include 'findcustomerid.php';
           $customerID = $newID;

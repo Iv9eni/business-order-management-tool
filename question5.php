@@ -38,7 +38,7 @@
       <div id="updateNumberContainer">
       <!-- Start of 5) Updating a customers phone number -->
       <!-- Changes a current customers phone number -->
-      <form action="updatephonenumber.php" method="post">
+      <form action="#" method="post">
         <!-- To show the customers -->
         <?php
           # Gets customer data to print selection
@@ -57,9 +57,27 @@
 
         <!-- Submits the change in phone number -->
         <input type="text" name="newNumber" placeholder="New Phone Number"><br>
-        <input type="submit" value="Update Phone Number">
+        <input type="submit" name="updatePhone" value="Update Phone Number">
 
       </form>
+
+      <!-- Updates the customers phone number -->
+      <?php
+        # Checks if user submitted something for updating
+        if (isset($_POST["updatePhone"])) {
+          # Query string required to run the proper query
+          $update_query = 'UPDATE customer SET phonenumber="' . $_POST["newNumber"] . '" WHERE customerid=' . $_POST["customer"];
+
+          # Querys to SQL and checks if the query is successful
+          if (mysqli_query($connection, $update_query)) {
+            echo 'Record successfully updated';
+          }
+          # If query unsuccessful run this
+          else {
+            echo 'Error updating record: ' . mysqli_error($connection);
+          }
+        }
+      ?>
     </div>
   </body>
 </html>
