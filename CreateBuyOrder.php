@@ -32,7 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'functionalPHP\connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
 
     <div id="wrapper">
@@ -41,7 +41,7 @@
   		<form action="#" method="post">
   			<?php
   				# To display available customers to update
-  				include 'functionalPHP\getcustomerdata.php';
+  				include 'functionalPHP/getcustomerdata.php';
 
   				# Runs two querys to get all the customers and products that customers may purchase.
   				$product_query = 'SELECT * FROM product';
