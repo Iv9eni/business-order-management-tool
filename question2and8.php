@@ -105,14 +105,13 @@
 
          # Runs a query to find all the products and customers
          $search_query = 'SELECT fname, lname, description, quantity FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE quantity>=' . $quantity;
-
+         echo '<script type="text/javascript">alert("Test");</script>';
          # Checks if the query was successful
          if ($result = mysqli_query($connection, $search_query)) {
-
-           echo 'E';
+          echo '<script type="text/javascript">alert("Test");</script>';
            # Starts an unordered list
            echo '<ul>';
-
+           
            # Loops through all the rows in query
            while ($row = mysqli_fetch_assoc($result))
            {
