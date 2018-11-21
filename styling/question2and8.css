@@ -56,14 +56,13 @@ li {
 }
 
 #quantityAnalysisContainer p {
-    background-color: #dadade;
     padding: 5px;
-    border-radius: 5px;
     width: 435px;
     margin: auto;
 }
 
 #quantityTxt {
   margin-top: 10px;
+  margin-bottom: 25px;
   padding: 10px;
 }
