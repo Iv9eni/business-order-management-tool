@@ -31,12 +31,13 @@
 
 		<br><br>
 
-		<p> "View Customer Purchases" page contains Question 1) results </p>
-		<p> "Products" page contains the results of Question 2), 7), 8)</p>
-		<p> "Create Buy Order" page contains the results of Question 3)</p>
-		<p> "Add/Delete Customers" page contains the results of Question 4) and 6) </p>
-		<p> "Update Phone" page contains the results of Question 5) </p>
-		<p> "Order Summary" page contains the results of Question 9) </p>
+		<!-- Info to the TA's -->
+		<p> "View Customer Purchases" page contains Question 1) results </p><br>
+		<p> "Products" page contains the results of Question 2), 7), 8)</p><br>
+		<p> "Create Buy Order" page contains the results of Question 3)</p><br>
+		<p> "Add/Delete Customers" page contains the results of Question 4) and 6) </p><br>
+		<p> "Update Phone" page contains the results of Question 5) </p><br>
+		<p> "Order Summary" page contains the results of Question 9) </p><br>
 
 	</body>
 </html>
