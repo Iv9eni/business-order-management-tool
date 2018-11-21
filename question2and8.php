@@ -105,28 +105,20 @@
 
          # Runs a query to find all the products and customers
          $search_query = 'SELECT fname, lname, description, quantity FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE quantity>=' . $quantity;
+         $result = mysqli_query($connection, $search_query)
 
-         # Checks if the query was successful
-         if ($result = mysqli_query($connection, $search_query)) {
+         # Starts an unordered list
+         echo '<ul>';
 
-           # Starts an unordered list
-           echo '<ul>';
-
-           # Loops through all the rows in query
-           while ($row = mysqli_fetch_assoc($result))
-           {
-             # Creates element of unordered list where it shows the customer full name, product they purchased, and the quantity the purchased
-             echo '<li>' . $row["FName"] . ' ' . $row["LName"] . ' Purchased ' . $row["Description"] . ' In Amount: ' . $row["Quantity"] . '</li>';
-           }
-
-           # Ends the unordered list
-           echo '</ul>';
-         }
-         else {
-           # Displays error message
-           die("Query failed");
+         # Loops through all the rows in query
+         while ($row = mysqli_fetch_assoc($result))
+         {
+           # Creates element of unordered list where it shows the customer full name, product they purchased, and the quantity the purchased
+           echo '<li>' . $row["FName"] . ' ' . $row["LName"] . ' Purchased ' . $row["Description"] . ' In Amount: ' . $row["Quantity"] . '</li>';
          }
 
+         # Ends the unordered list
+         echo '</ul>';
        }
       ?>
 
