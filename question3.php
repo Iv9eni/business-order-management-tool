@@ -82,24 +82,39 @@
       <?php
         # Checks if the user submitted the product for purchasing
         if (isset($_POST["submit"])) {
+
           # Initializes variables to store the purchasers id and the products id that they are purchasing
           $whichCustomer = $_POST["customer"];
           $whichProduct = $_POST["productsid"];
           $quantity = $_POST["quantity"];
 
           # Query to see if the product has been Purchased
-          $search_query = 'SELECT * FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct; 
+          $search_query = 'SELECT COUNT(*) as ProductExist, Quantity FROM productsold WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
+          $check_product_status = mysqli_query($connection, $search_query);
+          $searchRow = mysqli_fetch_assoc($check_product_status)
 
-          # Query to insert purchase order into values
-          $insert_queryStr = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . intval($quantity) . ')';
+          # Checks if the customer already purchased the product
+          if ($searchRow["ProductExist"] == 1) {
+
+            # Stores quantity purchased and new quantity for calculation of new, larger quantity
+            $quantityPurchased = $searchRow["Quantity"];
+            $newQuantity = $quantity + $quantityPurchased;
+
+            # Query to insert purchase order into values
+            $insert_queryStr = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . $newQuantity . ')';
+          }
+          else {
+            # Query to insert purchase order into values
+            $insert_queryStr = 'INSERT INTO productsold VALUES (' . $whichProduct . ', ' . $whichCustomer . ', ' . $quantity . ')';
+          }
 
           # Checks if the query failed and outputs message if it does, otherwise adds row to database
           if ( !mysqli_query($connection, $insert_queryStr) ) {
             die('Error: Insertion Failed: ' . mysqli_error($connection));
           }
 
-          # Welcome
-          echo '<script type="text/javascript">alert("Producted Purchased");</script>';
+          # Alerts user that the purchase was successful
+          echo '<script type="text/javascript">alert("Product Purchased Successfully");</script>';
 
           # Closes database
           mysqli_close($connection);

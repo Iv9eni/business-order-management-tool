@@ -110,7 +110,7 @@
 
 
          # Starts an unordered list
-         echo '<p> Query Matched </p><ul>';
+         echo '<p> Query Matched: </p><ul>';
 
          # Loops through all the rows in query
          while ($row = mysqli_fetch_assoc($result))
