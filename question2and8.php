@@ -52,7 +52,6 @@
           <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
           <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
           <input id="submitStyle" name="showProducts" type="submit" value="Show Products">
-          <hr>
         </form>
 
       	<?php
@@ -83,9 +82,12 @@
         		mysqli_free_result($result);
           }
       	?>
+
+        <!-- Line break between questions 2 & 8 -->
+        <hr>
       </div>
 
-
+      <!-- Start of question 8) Displays products never purchased -->
       <div id="neverPurchasedContainer">
         <p>ITEMS NEVER PURCHASED: </p><br>
         <!-- Writes descriptions of products that were never purchased -->
