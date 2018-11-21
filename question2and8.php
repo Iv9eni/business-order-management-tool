@@ -109,6 +109,7 @@
          # Checks if the query was successful
          if ($result = mysqli_query($connection, $search_query)) {
 
+           echo 'E';
            # Starts an unordered list
            echo '<ul>';
 
