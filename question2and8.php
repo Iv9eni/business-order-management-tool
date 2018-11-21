@@ -38,7 +38,7 @@
     <div id="wrapper">
       <div id="orderByContainer">
         <!-- Form to find products and order in a certain manner depicted by user -->
-        <form action="getproducts.php" method="post">
+        <form action="#" method="post">
           <p> ORDER PREFERENCES: </p>
           <!-- Allows user to select from ascending/descending orders through a selection bar -->
           <select name="order">
@@ -51,9 +51,38 @@
           <!-- Radio buttons to select which attribute to order the products by -->
           <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
           <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
-          <input id="submitStyle" type="submit" value = "Show Products">
+          <input id="submitStyle" name="showProducts" "type="submit" value = "Show Products">
           <hr>
         </form>
+
+      	<?php
+          # Checks if the user wants to see products
+          if (isset($_POST["showProducts"])) {
+        		# Query to order products
+        		$query = 'SELECT description, costperitem FROM product ORDER BY ' . $_POST["orderby"] . ' ' . $_POST["order"];
+
+        		# Runs the query and sets it to a variable
+        		$result = mysqli_query($connection, $query);
+
+        		# Checks to see if the query was completed successfully
+        		if (!$result) {
+        			die("Query To Find Products Failed!");
+        		}
+
+            # Creates an ordered list of products
+            echo '<ol>';
+            
+        		# Loops through each row in the query
+        		while ($row = mysqli_fetch_assoc($result)) {
+        			echo '<li>' . $row["description"] . ' $' . $row["costperitem"] .  '</li>';
+        		}
+
+            # Ends list
+            echo '</ol>';
+
+        		mysqli_free_result($result);
+          }
+      	?>
       </div>
 
 
