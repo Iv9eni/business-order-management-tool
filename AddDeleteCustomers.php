@@ -128,14 +128,17 @@
                 echo 'Return Code:' . $_FILES["displayPic"]["error"] . '<br>';
               }
               else {
-                if (file_exists("images/" . $_FILES["displayPic"]["name"])) {
-                             echo '<p><hr>';
-                             echo $_FILES["displayPic"]["name"] . " already exists. ";
-                             echo '<p><hr>';
-                             $cusImage = "NULL";
-                } else {
-                             move_uploaded_file($_FILES["displayPic"]["tmp_name"],"images/" . $_FILES["displayPic"]["name"]);
-                             $cusImage = "images/" . $_FILES["displayPic"]["name"];
+                if (file_exists("images/" . $_FILES["displayPic"]["name"]))
+                {
+                   echo '<p><hr>';
+                   echo $_FILES["displayPic"]["name"] . " already exists. ";
+                   echo '<p><hr>';
+                   $cusImage = "NULL";
+                }
+                else
+                {
+                   move_uploaded_file($_FILES["displayPic"]["tmp_name"],"images/" . $_FILES["displayPic"]["name"]);
+                   $cusImage = "images/" . $_FILES["displayPic"]["name"];
                 }
               }
             }
