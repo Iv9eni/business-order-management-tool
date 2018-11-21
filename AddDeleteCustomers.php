@@ -111,8 +111,37 @@
           $customerPhone = $_POST["pNumber"];
           $customerAgent = $_POST["agent"];
 
+          $allowedExts = array("gif", "jpeg", "jpg", "png");
+          $temp = explode(".", $_FILES["displayPic"]["name"]);
+          $extension = strtolower(end($temp));
+          $uploadholder = dirname(__FILE__) . "/images";
+
+          if ((($_FILES["displayPic"]["type"] == "image/gif")
+            || ($_FILES["displayPic"]["type"] == "image/jpeg")
+            || ($_FILES["displayPic"]["type"] == "image/jpg")
+            || ($_FILES["displayPic"]["type"] == "image/pjpeg")
+            || ($_FILES["displayPic"]["type"] == "image/x-png")
+            || ($_FILES["displayPic"]["type"] == "image/png"))
+            && ($_FILES["displayPic"]["size"] < 500000)
+            && in_array($extension, $allowedExts)) {
+              if ($_FILES["displayPic"]["error"] > 0) {
+                echo 'Return Code:' . $_FILES["displayPic"]["error"] . '<br>';
+              }
+              else {
+                if (file_exists("images/" . $_FILES["displayPic"]["name"])) {
+                             echo '<p><hr>';
+                             echo $_FILES["displayPic"]["name"] . " already exists. ";
+                             echo '<p><hr>';
+                             $cusImage = "NULL";
+                } else {
+                             move_uploaded_file($_FILES["displayPic"]["tmp_name"],"images/" . $_FILES["displayPic"]["name"]);
+                             $cusImage = "images/" . $_FILES["displayPic"]["name"];
+                }
+              }
+            }
+
           # Query to insert into customer table
-          $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',"' . $customerFName . '","' . $customerLName . '","' . $customerAddress . '","' . $customerPhone . ', "' . $cusImage . '")';
+          $query = 'INSERT INTO customer VALUES (' . $customerID . ',' . $customerAgent . ',"' . $customerFName . '","' . $customerLName . '","' . $customerAddress . '","' . $customerPhone . '", "' . $cusImage . '")';
           $insert_result = mysqli_query($connection, $query);
 
           # Checks if the query was successful
