@@ -24,9 +24,8 @@
 				<li><a href="question1.php">View Customer Purchases</a></li>
 				<li><a href="question2and8.php">Products</a></li>
 				<li><a href="question3.php">Create Buy Order</a></li>
-				<li><a class="active" href="question4.php">Add Customer</a></li>
+				<li><a class="active" href="question4.php">Add/Delete Customers</a></li>
 				<li><a href="question5.php">Update Phone</a></li>
-        <li><a href="question6.php">Delete Customer</a></li>
         <li><a href="question9.php">Order Summary</a></li>
 			</ul>
 		</div>
@@ -94,7 +93,7 @@
       <!-- Start of 6) Deleting a customer -->
       <!-- Deletes a customer -->
       <div id="deleteContainer">
-        <form action="deletecustomer.php" method="post">
+        <form action="#" method="post">
           <!-- To show the customers -->
           <?php
             # Gets customer data to print selection
@@ -112,10 +111,28 @@
           ?>
 
           <!-- Submits the change in phone number -->
-          <input type="submit" value="Delete Customer">
+          <input type="submit" name="delete" value="Delete Customer">
 
         </form>
 
+        <!-- PHP to delete customer -->
+        <?php
+          if (isset($_POST["delete"])) {
+            # Initializes CustomerID to be deleted
+            $customerID = $_POST["customer"];
+
+            # Query to insert into customer table
+            $delete_query = 'DELETE FROM customer WHERE customerid=' . $customerID;
+
+            # Checks if the query was successful
+            if (mysqli_query($connection, $delete_query)) {
+              echo '<script type="text/javascript">alert("Customer Deleted");</script>';
+            }
+            else {
+              die("Query to delete customer failed: " . mysqli_error($connection));
+            }
+          }
+        ?>
     </div>
 
   </body>
