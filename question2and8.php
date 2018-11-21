@@ -51,7 +51,7 @@
           <!-- Radio buttons to select which attribute to order the products by -->
           <input type="radio" name="orderby" value="costperitem" checked="checked">ORDER BY PRICE<br>
           <input type="radio" name="orderby" value="description">ORDER BY NAME<br>
-          <input id="submitStyle" name="showProducts" "type="submit" value = "Show Products">
+          <input id="submitStyle" name="showProducts" type="submit" value="Show Products">
           <hr>
         </form>
 
@@ -71,7 +71,7 @@
 
             # Creates an ordered list of products
             echo '<ol>';
-            
+
         		# Loops through each row in the query
         		while ($row = mysqli_fetch_assoc($result)) {
         			echo '<li>' . $row["description"] . ' $' . $row["costperitem"] .  '</li>';
