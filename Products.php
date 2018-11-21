@@ -32,7 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
 
     <div id="wrapper">
@@ -152,6 +152,9 @@
          # Ends the unordered list
          echo '</ul>';
        }
+
+       # Closes database
+       mysqli_close($connection);
       ?>
 
      </div>

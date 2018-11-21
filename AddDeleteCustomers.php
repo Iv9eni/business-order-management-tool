@@ -32,7 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'functionalPHP\connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
 
     <div id="wrapper">
@@ -45,7 +45,7 @@
 
           <!-- Generates new ID for the customer -->
           <?php
-            include 'findcustomerid.php';
+            include 'functionalPHP/findcustomerid.php';
 
             # Prints the ID for the user to know when adding a new customer
             echo '<tr><td><label for="ID"> ID:</label>';
@@ -98,7 +98,7 @@
         if (isset($_POST["insertCustomer"])) {
 
           # Finds a new customerID and initializes it
-          include 'findcustomerid.php';
+          include 'functionalPHP/findcustomerid.php';
           $customerID = $newID;
 
           # Variables initializing all new customer attributes
@@ -132,7 +132,7 @@
           <!-- To show the customers -->
           <?php
             # Gets customer data to print selection
-            include 'getcustomerdata.php';
+            include 'functionalPHP/getcustomerdata.php';
 
             # Starts a selection operation to pick from a list of customers
             echo '<select name="deleteCustomer" style="margin-bottom: 15px; margin-right: 90px;">';
@@ -167,6 +167,9 @@
               die("Query to delete customer failed: " . mysqli_error($connection));
             }
           }
+
+          # Closes connection to database
+          mysqli_close($connection);
         ?>
     </div>
   </body>

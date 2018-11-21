@@ -32,7 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
     <div id="wrapper">
       <div id="updateNumberContainer">
@@ -42,7 +42,7 @@
         <!-- To show the customers -->
         <?php
           # Gets customer data to print selection
-          include 'getcustomerdata.php';
+          include 'functionalPHP/getcustomerdata.php';
 
           # Starts a selection operation to pick from a list of customers
           echo '<select name="customer">';
@@ -77,6 +77,9 @@
             echo 'Error updating record: ' . mysqli_error($connection);
           }
         }
+
+        # Closes connection to database
+        mysqli_close($connection);
       ?>
     </div>
   </body>

@@ -32,7 +32,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
     <!-- 1) Allows you to see the products a specific customer has purchased -->
     <form action="#" method="post">
@@ -41,7 +41,7 @@
         <div id="customers">
           <!-- Shows all the customers user may select from -->
           <?php
-            include 'selectcustomer.php';
+            include 'functionalPHP/selectcustomer.php';
           ?>
         </div>
 
@@ -94,6 +94,9 @@
             # Ends the unordered list
             echo '</ul>';
           }
+
+          # Closes connection to database
+          mysqli_close($connection);
         ?>
     </div>
 

@@ -34,7 +34,7 @@
 
     <!-- Connects to HTML file with the database we are working with -->
     <?php
-      include 'connectdb.php';
+      include 'functionalPHP/connectdb.php';
     ?>
 
     <!-- Wrap the contents of the HTML file for styling -->
@@ -103,6 +103,10 @@
         <li><label>Total Costs: $</label> <b><?php echo $totalCost; ?></b></li>
       </ul>
 
+      <?php
+        # Closes database
+        mysqli_close($connection);
+      ?>
     </div>
 
   </body>
