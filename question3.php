@@ -24,9 +24,8 @@
 				<li><a href="question1.php">View Customer Purchases</a></li>
 				<li><a href="question2and8.php">Products</a></li>
 				<li><a class="active" href="question3.php">Create Buy Order</a></li>
-				<li><a href="question4.php">Add Customer</a></li>
+				<li><a href="question4.php">Add/Delete Customers</a></li>
 				<li><a href="question5.php">Update Phone</a></li>
-        <li><a href="question6.php">Delete Customer</a></li>
         <li><a href="question9.php">Order Summary</a></li>
 			</ul>
 		</div>
@@ -101,7 +100,7 @@
             $newQuantity = $quantity + $quantityPurchased;
 
             # Query to insert purchase order into values
-            $insert_queryStr = 'UPDATE productsold SET quantity=' . $newQuantity . ' WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct; 
+            $insert_queryStr = 'UPDATE productsold SET quantity=' . $newQuantity . ' WHERE purchaserid=' . $whichCustomer . ' AND productid=' . $whichProduct;
           }
           else {
             # Query to insert purchase order into values
