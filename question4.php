@@ -100,7 +100,7 @@
             include 'getcustomerdata.php';
 
             # Starts a selection operation to pick from a list of customers
-            echo '<select name="customer">';
+            echo '<select name="deleteCustomer" style="padding: 15px;">';
 
             # Loops through list of customers and makes them options of our selection
             while ($row = mysqli_fetch_assoc($c_result)) {
@@ -111,7 +111,7 @@
           ?>
 
           <!-- Submits the change in phone number -->
-          <input type="submit" name="delete" value="Delete Customer" style="  width: 220px; height: 35px;">
+          <input type="submit" name="delete" value="Delete Customer" style="  width: 220px; height: 35px; margin-left: 10px;">
 
         </form>
 
@@ -119,7 +119,7 @@
         <?php
           if (isset($_POST["delete"])) {
             # Initializes CustomerID to be deleted
-            $customerID = $_POST["customer"];
+            $customerID = $_POST["deleteCustomer"];
 
             # Query to insert into customer table
             $delete_query = 'DELETE FROM customer WHERE customerid=' . $customerID;
