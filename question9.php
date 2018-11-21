@@ -97,7 +97,17 @@
         <li><label>Product ID:</label> <b><?php echo $productSelect; ?></b></li>
         <li><label>Product Name:</label> <b><?php echo $product["Description"]; ?></b></li>
         <li><label>Cost Per Item: $</label> <b><?php echo $product["CostPerItem"]; ?></b></li>
-        <li><label>Amount Sold:</label> <b><?php if($totalSold["totalSold"] > 0) {echo $totalSold["totalsold"]; } else { echo '0'; } ?></b></li>
+        <li><label>Amount Sold:</label> <b>
+        <?php
+          if( $totalSold["totalSold"] > 0)
+          {
+            echo $totalSold["totalsold"];
+          }
+          else if ($totalSold["totalSold"] == 0)
+          {
+            echo '0';
+          }
+          ?></b></li>
         <li><label>Total Costs: $</label> <b><?php echo $totalCost; ?></b></li>
       </ul>
 
