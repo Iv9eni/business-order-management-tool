@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-    <link rel="stylesheet" type="text/css" href="styling/question3.css" />
+    <link rel="stylesheet" type="text/css" href="styling/CreateBuyOrder.css" />
     <title>EBAY - Create Buy Order</title>
   </head>
   <body>

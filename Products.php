@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-		<link rel="stylesheet" type="text/css" href="styling/question2and8.css" />
+		<link rel="stylesheet" type="text/css" href="styling/Products.css" />
     <title>EBAY - Products</title>
   </head>
   <body>

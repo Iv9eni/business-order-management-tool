@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-    <link rel="stylesheet" type="text/css" href="styling/question1.css" />
+    <link rel="stylesheet" type="text/css" href="styling/ViewCustomerPurchases.css" />
     <title>EBAY - Customer Orders</title>
   </head>
   <body>

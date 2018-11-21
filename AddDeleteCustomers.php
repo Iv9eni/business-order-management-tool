@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
-    <link rel="stylesheet" type="text/css" href="styling/question4.css" />
+    <link rel="stylesheet" type="text/css" href="styling/AddDeleteCustomer.css" />
     <title>EBAY - Add/Remove Customers</title>
   </head>
   <body>
