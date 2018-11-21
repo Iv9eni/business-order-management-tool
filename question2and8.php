@@ -116,7 +116,7 @@
            while ($row = mysqli_fetch_assoc($result))
            {
              # Creates element of unordered list where it shows the customer full name, product they purchased, and the quantity the purchased
-             echo '<li>' . $row["FName"] . ' ' . $row["LName"] . ' Purchased ' . $row["Description"] . ' In Amount: ' . $row["Quantity"];
+             echo '<li>' . $row["FName"] . ' ' . $row["LName"] . ' Purchased ' . $row["Description"] . ' In Amount: ' . $row["Quantity"] . '</li>';
            }
 
            # Ends the unordered list
