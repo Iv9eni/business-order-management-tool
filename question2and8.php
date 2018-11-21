@@ -103,7 +103,7 @@
 
             # Runs a query to find all the products and customers
             $search_query = 'SELECT fname, lname, description, quantity FROM productsold INNER JOIN product ON productid=prodid INNER JOIN customer ON purchaserid=customerid WHERE quantity>=' . $quantity;
-            $result = mysqli_query($connection, $search_query)
+            $result = mysqli_query($connection, $search_query);
 
             # Checks if the query was successful
             if ($result) {
