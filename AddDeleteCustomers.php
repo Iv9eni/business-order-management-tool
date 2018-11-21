@@ -2,7 +2,7 @@
   Author: Ivgeni Darinski
   Student NO.: 250920885
   Date Created: 2018-11-13
-  File: question4.php
+  File: AddDeleteCustomers.php
 -->
 
 <!DOCTYPE html>

@@ -22,7 +22,7 @@
 		echo '<b>Agent:</b> ' . $row["FirstName"] . ' ' . $row["LastName"] . '<br>';
 		echo '<b>Address:</b> ' . $row["Address"] . '<br>';
 		echo '<b>Phone Number:</b> (***) ' . $row["PhoneNumber"] . '<br><br>';
-		echo '<img src="' . $row["cusimage"] . '">';
+		echo '<img src="' . $row["cusimage"] . '" width="100" height="100">';
 		echo '</div>';
 	}
 ?>
