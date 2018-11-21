@@ -43,6 +43,15 @@ li {
   margin-bottom: 8px;
 }
 
+#quantityAnalysisContainer {
+    margin-top: 10px;
+}
+
+#quantityAnalysisContainer p {
+    background-color: #8c8ca3;
+    padding: 5px;
+}
+
 #quantityTxt {
   margin-top: 10px;
   padding: 10px;
