@@ -47,6 +47,10 @@ li {
     margin-top: 25px;
 }
 
+#quantityAnalysisContainer ul {
+    margin-top: 25px;
+}
+
 #quantityAnalysisContainer input[type="submit"]{
     padding: 10px;
 }
