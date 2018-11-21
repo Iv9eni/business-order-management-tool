@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styling/defaultstyle.css" />
     <link rel="stylesheet" type="text/css" href="styling/question1.css" />
-    <title>EBAY - Customer Purchases</title>
+    <title>EBAY - Customer Orders</title>
   </head>
   <body>
     <!-- EBAY logo on every site -->
