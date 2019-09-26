@@ -8,9 +8,9 @@
 <?php
 	# The host, username, password, and database name used to connect to the SQL and database we will be using
 	$dbhost = "localhost";
-	$dbuser = "root";
+	$dbuser = "id10891963_root";
 	$dbpass = "cs3319";
-	$dbname = "idarinskassign2db";
+	$dbname = "id10891963_idarinskassign2db";
 
 	# Stores the MYSQL database in connection to run querys, store/modify data,  etc..
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
